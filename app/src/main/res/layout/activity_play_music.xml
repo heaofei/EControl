@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_play_music"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mxkj.econtrol.ui.activity.PlayMusicActivity">
+
+    <Button
+        android:id="@+id/bt_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280px"
+        android:text="播放" />
+
+    <Button
+        android:id="@+id/bt_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下一首" />
+
+    <Button
+        android:id="@+id/bt_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上一首" />
+
+    <Button
+        android:id="@+id/bt_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="暂停" />
+
+
+    <SeekBar
+        android:id="@+id/vol_seekbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:max="100"
+        android:maxHeight="5dp"
+        android:minHeight="5dp"
+        android:paddingBottom="20px"
+        android:paddingTop="20px"
+        android:progressDrawable="@drawable/progress_drawable"
+        android:secondaryProgress="0"
+        android:thumb="@drawable/icon_control_point2" />
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        />
+
+</LinearLayout>

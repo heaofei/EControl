@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="128px"
+    android:background="@color/com_white">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="127px"
+        android:layout_toLeftOf="@+id/tv_time"
+        >
+
+        <TextView
+            android:id="@+id/tv_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nickName"
+            android:textColor="@color/text_black_666al60"
+            android:textSize="28px"
+            android:lines="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/tv_notify_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="content"
+            android:textColor="@color/text_black_666"
+            android:textSize="28px"
+            android:gravity="center"
+            android:layout_marginTop="12px"
+            />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="25px"
+        android:gravity="center"
+        android:textColor="#888888"
+        android:textSize="24px"
+        android:text="time"/>
+
+
+    <View
+        android:id="@+id/split_line"
+        android:layout_width="2px"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50px"
+        android:background="#cccccc"
+        android:visibility="gone"
+        />
+
+    <com.mxkj.econtrol.widget.CircleImageView
+        android:id="@+id/imv_header"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="34px"
+        android:clickable="true"
+        android:src="@drawable/ic_no_head"
+        app:border_color="#80e5e5e5"
+        app:border_overlay="true"
+        app:border_width="1px"
+        app:layout_auto_baseheight="width" />
+
+    <View
+        android:id="@+id/split_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="127px"
+        android:layout_marginRight="25px"
+        android:background="@color/view_light_grey" />
+
+
+</RelativeLayout>
+
+
+
+
+
+
+

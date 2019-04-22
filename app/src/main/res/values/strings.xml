@@ -1,0 +1,295 @@
+<resources>
+    <string name="app_name">我家智能</string>
+    <string name="login">登 录</string>
+    <string name="regist">注册账号</string>
+    <string name="title_activity_first_page">首页</string>
+    <string name="get_code_fail">获取验证码失败</string>
+    <string name="get_code_success">获取验证码成功</string>
+    <string name="reset_pwd_fail">重置密码失败</string>
+    <string name="reset_pwd_success">重置密码成功</string>
+    <string name="phone">手机号</string>
+    <string name="verity_code">验证码</string>
+    <string name="please_input_code">请输入验证码</string>
+    <string name="please_input_china_phone">请输入中国大陆手机</string>
+    <string name="login_and_find_passowrd"> 用于找回密码</string>
+    <string name="user_name">用户名</string>
+    <string name="password">密码</string>
+    <string name="please_ensure_password">请再次输入密码</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="ensure_password">请重复输入密码</string>
+    <string name="user_name_tip">英文、数字、禁止使用特殊符号</string>
+    <string name="please_input_pasword">请输入密码</string>
+    <string name="please_input_phone">请输入手机号码</string>
+    <string name="setting">设置</string>
+    <string-array name="missing">
+        <item>请选择</item>
+
+
+    </string-array>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="helpe">帮助</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="notify">提醒</string>
+    <string name="person_info">个人信息</string>
+    <string name="OK">确定</string>
+    <string name="add_new_house">添加新方案</string>
+    <string name="please_chose_city">请选择城市</string>
+    <string name="please_chose_houes_estate">请选择小区</string>
+    <string name="please_chose_area">请选择区</string>
+    <string name="please_select_building">请选择楼盘</string>
+    <string name="please_select_house">请选择房子</string>
+    <string name="please_edit_name">请填写您的真实姓名</string>
+    <string name="network_connect_fail">网络连接失败</string>
+    <string name="logout_success">注销成功！</string>
+    <string name="modify_user_info_success">保存成功！</string>
+    <string name="network_connect_timeout">网络连接超时</string>
+    <string name="please_input_user_name">请输入用户名</string>
+    <string name="please_enter_the_correct_phone_number">请输入正确的手机号码</string>
+    <string name="please_enter_the_correct_user_name">请输入正确的用户名</string>
+    <string name="please_input_rePassword">请再次输入密码</string>
+    <string name="two_passwords_are_inconsistent">两次输入的密码不一致，请重新输入</string>
+    <string name="regist_success">注册成功！</string>
+    <string name="password_length_must_be_greater_than_6">密码必须长于6位</string>
+    <string name="please_select_pic">请选择图片</string>
+    <string name="modify_header_pic_success">修改头像成功</string>
+    <string name="modify_mood_success">修改心情成功</string>
+    <string name="apply_success">您的申请已提交，请等待管理员确认</string>
+    <string name="modify_success">修改成功</string>
+    <string name="applly_type_tip">请选择申请的类型</string>
+    <string name="forgot_password">忘记密码？</string>
+    <string name="old_passwd">旧密码</string>
+    <string name="new_passwd">新密码</string>
+    <string name="send_fial">发送失败，正在重新连接</string>
+    <string name="send_cmd_fail_tip">操作失败，请重试</string>
+    <string name="logon_failure_tip1">您的账号于</string>
+    <string name="logon_failure_tip">在其他设备上登录，如果不是您本人操作，您的密码很可能已经泄露，建议您修改密码。</string>
+    <string name="logon_failure_tip02">下线通知</string>
+    <string name="please_input_account">请输入账号</string>
+    <string name="myg_house">我的家</string>
+    <string name="comment">评论</string>
+    <string name="reply">回复</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="new_project">新建方案</string>
+    <string name="reset_password">重置密码</string>
+    <string name="regist_phone">注册手机号码</string>
+    <string name="add_new_project">添加新方案</string>
+    <string name="reject_tip">您的提交的申请，已被管理员拒绝</string>
+    <string name="i_know">我知道了</string>
+    <string name="requet_check_result">申请审核结果</string>
+    <string name="new_count_regist">立即注册</string>
+    <string name="please_input_new_password">请输入新密码</string>
+    <string name="have_count">已有账号登录？</string>
+    <string name="please_inout_nickname">请输入昵称</string>
+    <string name="private_policy_tip">点击\"注册\",即表示您已阅读并同意</string>
+    <string name="private_policy_tip02"> 服务协议 </string>
+    <string name="private_policy_tip03"> 隐私政策 </string>
+    <string name="light">灯光</string>
+    <string name="AirConditioner">空调</string>
+    <string name="Blower">新风</string>
+    <string name="curtains">窗帘</string>
+    <string name="lock">门锁</string>
+    <string name="boli">雾化玻璃</string>
+    <string name="low_wind_speed">慢速</string>
+    <string name="high_wind_speed">高速</string>
+    <string name="midle_wind_speed">中速</string>
+    <string name="make_cool">制冷</string>
+    <string name="make_heat">制暖</string>
+    <string name="air">送风</string>
+    <string name="dry">除湿</string>
+    <string name="delete_other_user_tip">你是否要解除原有控制用户？</string>
+    <string name="tip">提示</string>
+    <string name="cancel">取消</string>
+    <string name="reject">拒绝</string>
+    <string name="agree">通过</string>
+    <string name="logout">退出登录</string>
+    <string name="about_fiswink">关于FisWink</string>
+    <string name="app_setting">设置</string>
+    <string name="modify_password">修改密码</string>
+    <string name="language">语言</string>
+    <string name="clear_cache">清空缓存</string>
+    <string name="clear_cache_success">清除缓存成功！</string>
+    <string name="please_input_old_password">请输入旧密码</string>
+    <string name="new_pass_not_null">新密码不能为空</string>
+    <string name="old_password_not_null">旧密码不能为空</string>
+    <string name="please_reinput_passwrod">请重复输入密码</string>
+    <string name="modify_pass_success">修改密码成功！</string>
+    <string name="temp">温度</string>
+    <string name="user_manager">用户管理</string>
+    <string name="please_select_operation">请选择操作</string>
+    <string name="change_admin">转交管理权</string>
+    <string name="unbind">解除绑定</string>
+    <string name="unbin_success">解绑成功</string>
+    <string name="change_success">转让成功</string>
+    <string name="comment_success">评论成功！</string>
+    <string name="comment_content_not_null">评论内容不能为空</string>
+    <string name="please_input_comment">输入评论</string>
+    <string name="send_community">发布社区</string>
+    <string name="open">开</string>
+    <string name="close">关</string>
+    <string name="keep">保存</string>
+    <string name="store">商城</string>
+    <string name="finish">完成</string>
+    <string name="release_refresh">释放刷新</string>
+    <string name="put_refresh">下拉刷新</string>
+    <string name="refresh">正在刷新</string>
+    <string name="giveup_edit">放弃此次编辑?</string>
+    <string name="fragment_main_sences">智能场景</string>
+    <string name="fragment_main_newhouse">新增住宅</string>
+    <string name="fragment_main_nohouse">您尚未添加住宅</string>
+    <string name="fragment_main_myroom">我的房间</string>
+    <string name="fragment_main_main">首页</string>
+    <string name="fragment_main_statistics">使用习惯</string>
+    <string name="fragment_main_my">个人中心</string>
+    <string name="fragment_main_esitroomname">修改房间名称</string>
+    <string name="fragment_main_inputroomname">输入此房间名称</string>
+    <string name="fragment_main_all_close1">确认开启全关模式？</string>
+    <string name="fragment_main_all_close2">开启全关模式后将会关闭全屋的灯光</string>
+    <string name="fragment_main_deletesence">确定删除该场景</string>
+    <string name="fragment_main_deletesencetips">删除后将无法找回</string>
+    <string name="fragment_main_get_house_fail">获取房子列表失败</string>
+    <string name="fragment_sences_edit01">进入</string>
+    <string name="fragment_sences_edit02">编辑</string>
+    <string name="fragment_sences_edit">进入\n编辑</string>
+    <string name="message_center_message">消息提醒</string>
+    <string name="message_center_notice">系统通知</string>
+    <string name="my_hours_check_qrcode">查看二维码</string>
+    <string name="hours_userlist_transfer">转让管理权限</string>
+    <string name="hours_userlist_qrcode">住宅二维码</string>
+    <string name="hours_userlist_exit">退出住宅</string>
+    <string name="feedback_tips">感谢您使用方胜智能APP，使用过程中有任何意见或建议请反馈给我们。</string>
+    <string name="feedback_tips02">请留下您的联系方式，我们可能联系您。</string>
+    <string name="feedback_tips03">字数过少，请输入不低于10个字！</string>
+    <string name="feedback_submit">提 交</string>
+    <string name="feedback_success">反馈成功</string>
+    <string name="feedback_submit_result">感谢您对我们的信任与支持，我们会认真处理您的反馈，尽快为您解决。</string>
+    <string name="about_version_about">公司介绍</string>
+    <string name="about_version_setvice">服务协议</string>
+    <string name="about_version_policy">隐私政策</string>
+    <string name="new_hours_estate">地区</string>
+    <string name="new_hours_address">地址</string>
+    <string name="new_hours_choice">请选择</string>
+    <string name="new_hours_yourname">您的姓名</string>
+    <string name="new_hours_is_owner">您的身份</string>
+    <string name="new_hours_verification">身份验证</string>
+    <string name="new_hours_certificates">身份证照</string>
+    <string name="new_hours_property">物业证明</string>
+    <string name="new_hours_you_name">请填写您的真实姓名</string>
+    <string name="new_hours_not_add">未添加</string>
+    <string name="new_hours_submit">提交审核</string>
+    <string name="fragment_statistics_usetime">使用时长</string>
+    <string name="fragment_statistics_usenumber">使用次数</string>
+    <string name="fragment_my_house_tips">请选择默认房子</string>
+    <string name="qrcode_scan">扫描二维码</string>
+    <string name="qrcode_submit">确认申请</string>
+    <string name="qrcode_join">是否加入</string>
+    <string name="qrcode_join_fail">失败申请</string>
+    <string name="qrcode_join_realname">请在个人信息中填写真实姓名</string>
+    <string name="qrcode_join_perfectrealname">完善资料</string>
+    <string name="qrcode_cametra_error">请到，设置-应用管理-权限设置中，开启应用相机权限</string>
+
+    <string name="message_center">消息中心</string>
+    <string name="message_notify">系统通知</string>
+    <string name="message_message">消息提醒</string>
+    <string name="message_nomessage">暂无消息</string>
+
+    <string name="my_house">我的住宅</string>
+    <string name="my_house_delete">确定删除住宅?</string>
+    <string name="my_house_delete_tips">删除后将无法找回</string>
+    <string name="my_house_nohouse">您尚未添加住宅</string>
+
+    <string name="house_user">家庭成员</string>
+    <string name="house_user_exit">确定退出住宅?</string>
+    <string name="house_user_exit_tips">退出后将无法找回</string>
+    <string name="house_user_exit_success">退出成功!</string>
+
+    <string name="feed_back">意见反馈</string>
+
+    <string name="user_info_edit_head">编辑头像</string>
+    <string name="user_info_esit_real_name">请填写您的真实姓名</string>
+    <string name="user_info_real_name">真实姓名</string>
+
+
+    <string name="login_regist_company">广州方胜智能工程有限公司 版权所有</string>
+    <string name="login_regist_company02">© 2019 Fiswink.com</string>
+    <string name="product_detail">商品详情</string>
+    <string name="about_this_version">关于此版本</string>
+</resources>

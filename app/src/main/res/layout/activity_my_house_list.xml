@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_house_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mxkj.econtrol.view.activity.MyHouseListActivity">
+
+
+    <include
+        layout="@layout/incloud_title_layout2"
+        ></include>
+
+
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <com.mxkj.econtrol.widget.MyLinearLayout
+            android:id="@+id/ll_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title"
+            android:orientation="vertical"
+                android:layout_above="@+id/rl_add_hours"
+            >
+            <com.mxkj.econtrol.widget.SuperSwipeRefreshLayout
+                android:id="@+id/superSwipeRefreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycle_myhours_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="6px"
+                    />
+
+            </com.mxkj.econtrol.widget.SuperSwipeRefreshLayout>
+
+        </com.mxkj.econtrol.widget.MyLinearLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/rl_add_hours"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_gravity="bottom"
+                android:background="@color/text_orangereg02"
+                android:layout_alignParentBottom="true"
+                >
+                <TextView
+                    android:id="@+id/tv_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/fragment_main_newhouse"
+                    android:textSize="30px"
+                    android:textColor="@color/com_white"
+                    android:drawablePadding="10px"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/center_home_add"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_add"
+                    android:layout_marginRight="12px"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1px"
+    android:background="@null"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16px"
+        android:layout_toRightOf="@+id/iv_number"
+        android:text=""
+        android:textColor="@color/text_black_999"
+        android:textSize="28px" />
+
+    <RelativeLayout
+        android:id="@+id/rl_select_house_estate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:layout_marginTop="24px"
+        android:background="@drawable/layout_radius_white20">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="26px"
+            android:layout_toRightOf="@+id/iv_number"
+            android:text=""
+            android:textColor="@color/text_black_666"
+            android:textSize="32px"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawablePadding="10px"
+            android:paddingBottom="24px"
+            android:paddingLeft="32px"
+            android:paddingRight="32px"
+            android:paddingTop="34px"
+            android:text=""
+            android:textColor="@color/text_black_666"
+            android:textSize="28px"
+            android:layout_below="@+id/tv_title"
+            />
+
+        <View
+            android:id="@+id/viewline"
+            style="@style/view_line"
+            android:layout_below="@+id/tv_content"
+            ></View>
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10px"
+            android:gravity="center"
+            android:paddingBottom="24px"
+            android:paddingLeft="32px"
+            android:paddingRight="32px"
+            android:paddingTop="24px"
+            android:text="查看更多"
+            android:textColor="@color/text_black_999"
+            android:textSize="28px"
+            android:layout_below="@+id/viewline"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

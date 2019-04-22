@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="366px"
+            android:scaleType="fitXY"
+            android:src="@drawable/scene_main_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@color/com_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_go_home"
+                android:layout_width="168px"
+                android:layout_height="66px"
+                android:layout_marginLeft="180px"
+                android:background="@drawable/model_btn_bg_selector">
+
+                <ImageView
+                    android:id="@+id/imv_go_home"
+                    android:layout_width="25px"
+                    android:layout_height="25px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40px"
+                    android:src="@drawable/ic_home" />
+
+                <TextView
+                    android:id="@+id/tv_go_home_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="73px"
+                    android:gravity="center"
+                    android:text="回家"
+                    android:textColor="#f72971" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_leave_home_model"
+                android:layout_width="168px"
+                android:layout_height="66px"
+                android:layout_marginLeft="50px"
+                android:background="@drawable/model_btn_normal_bg">
+
+                <ImageView
+                    android:id="@+id/imv_leave_home"
+                    android:layout_width="25px"
+                    android:layout_height="25px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40px"
+                    android:src="@drawable/ic_leave_home_normal" />
+
+                <TextView
+                    android:id="@+id/tv_leave_home_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="70px"
+                    android:gravity="center"
+                    android:text="离家"
+                    android:textColor="#f72971"
+                    android:textSize="28px" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#cccccc" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="715px"
+            android:layout_marginTop="15px">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_scenes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#cccccc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@color/com_white"
+            android:orientation="horizontal"
+            android:paddingTop="5px">
+
+            <LinearLayout
+                android:id="@+id/ll_bottom_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:src="@drawable/location" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本地链接"
+                    android:textColor="#999999"
+                    android:textSize="20px" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_bottom_midle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:src="@drawable/toolbar_icon_homepage_active" />
+
+                <TextView
+                    android:id="@+id/tv_scene_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A101"
+                    android:textColor="#f72971"
+                    android:textSize="20px" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_bottom_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:src="@drawable/service" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小区物业"
+                    android:textColor="#999999"
+                    android:textSize="20px" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="#30000000">
+
+
+        <com.mxkj.econtrol.widget.CircleImageView
+            android:id="@+id/imv_user_pic"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25px"
+            android:src="@drawable/ic_no_head"
+            app:border_color="#80e5e5e5"
+            app:border_overlay="true"
+            app:border_width="2px"
+            app:layout_auto_baseheight="width" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_users"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="375px">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</FrameLayout>

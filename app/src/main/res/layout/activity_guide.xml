@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.mxkj.econtrol.widget.AbSlidingPlayView
+        android:id="@+id/mAbSlidingPlayView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_bottom"
+        ></com.mxkj.econtrol.widget.AbSlidingPlayView>
+
+
+        <TextView
+            android:id="@+id/bt_guide"
+            android:layout_width="386px"
+            android:layout_height="100px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="90px"
+            android:gravity="center"
+            android:text=""
+            android:textSize="16dp"
+            android:textColor="@color/text_black_333"
+            android:visibility="gone"
+            android:background="@drawable/ic_guide"
+            />
+
+
+
+
+
+
+
+
+</RelativeLayout>

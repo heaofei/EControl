@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_regist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <include layout="@layout/incloud_title_layout2"></include>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="502px"
+        android:background="@drawable/app_bg"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:layout_width="256px"
+            android:layout_height="55px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38px"
+            android:src="@drawable/ic_logo" />
+
+        <ImageView
+            android:id="@+id/imv_close"
+            android:layout_width="29px"
+            android:layout_height="29px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="38px"
+            android:layout_marginTop="33px"
+            android:clickable="true"
+            android:src="@drawable/login_icon_close"
+            android:visibility="gone" />
+
+
+        <com.mxkj.econtrol.widget.CircleImageView
+            android:id="@+id/imv_header_pic"
+            android:layout_width="168px"
+            android:layout_height="168px"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:src="@drawable/ic_no_head"
+            app:border_color="#e5e5e5"
+            app:border_overlay="true"
+            app:border_width="5px"
+            app:layout_auto_baseheight="width" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/com_white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="88px">
+
+            <ImageView
+                android:id="@+id/imv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="38px"
+                android:src="@drawable/ic_forget_phone" />
+
+            <EditText
+                android:id="@+id/edit_phone"
+                style="@style/regist_edittext_style"
+                android:layout_toRightOf="@id/imv_phone"
+                android:hint="@string/please_input_phone"
+                android:inputType="phone"
+                android:maxLength="13"
+                android:textSize="32px" />
+
+            <ImageView
+                android:id="@+id/imv_clear"
+                android:layout_width="36px"
+                android:layout_height="36px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="36px"
+                android:background="@drawable/ic_delect"
+                android:visibility="gone"
+                app:layout_auto_baseheight="width" />
+
+
+            <View
+                style="@style/view_line"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="24px"
+                android:layout_marginRight="24px"></View>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="88px">
+
+            <ImageView
+                android:id="@+id/imv_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="38px"
+                android:src="@drawable/ic_forget_yzm" />
+
+
+            <EditText
+
+                android:id="@+id/edit_verity_code"
+                style="@style/regist_edittext_style"
+                android:layout_toRightOf="@id/imv_code"
+                android:hint="@string/please_input_code"
+                android:inputType="number"
+                android:maxLength="8"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/tv_get_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="36px"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="获取验证码"
+                android:textColor="@color/text_orangereg02"
+                android:textSize="28px" />
+
+            <View
+                style="@style/view_line"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="24px"
+                android:layout_marginRight="24px"></View>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="88px">
+
+            <ImageView
+                android:id="@+id/imv_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="38px"
+                android:src="@drawable/ic_forget_password1" />
+
+            <EditText
+                android:id="@+id/edit_new_password"
+                style="@style/regist_edittext_style"
+                android:layout_toRightOf="@id/imv_password"
+                android:hint="@string/please_input_new_password"
+                android:inputType="textPassword"
+                android:textSize="32px"
+                android:maxLength="16"/>
+
+            <View
+                style="@style/view_line"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="24px"
+                android:layout_marginRight="24px"></View>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="88px">
+
+            <ImageView
+                android:id="@+id/imv_repassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="38px"
+                android:src="@drawable/ic_forget_password2" />
+
+            <EditText
+                android:id="@+id/edit_repassword"
+                style="@style/regist_edittext_style"
+                android:layout_toRightOf="@id/imv_repassword"
+                android:hint="@string/please_ensure_password"
+                android:inputType="textPassword"
+                android:textSize="32px"
+                android:maxLength="16"/>
+
+            <View
+                style="@style/view_line"
+                android:layout_alignParentBottom="true"></View>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="88px"
+        android:layout_marginRight="88px"
+        android:layout_marginTop="40px"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="两次输入的密码不一致"
+        android:textColor="@color/text_orangereg02"
+        android:textSize="24px"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="86px"
+        android:background="@drawable/login_regist_bg_50opaque"
+        android:text="确 定"
+        android:gravity="center"
+        android:textColor="@color/com_white"
+        android:textSize="30px"
+        android:layout_marginBottom="10px"
+        android:layout_marginLeft="88px"
+        android:layout_marginRight="88px"
+        android:layout_marginTop="20px"
+        />
+
+
+</LinearLayout>

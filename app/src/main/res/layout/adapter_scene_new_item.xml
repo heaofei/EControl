@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="106px"
+    android:layout_marginBottom="1px"
+    android:id="@+id/item_layout"
+    android:orientation="vertical"
+    android:background="@color/com_white">
+
+    <RelativeLayout
+        android:id="@+id/rl_select_house_estate"
+        style="@style/FragmentMy_RelativeLayout_Prass">
+        <TextView
+            android:id="@+id/tv_room_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textColor="@color/text_black_666"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/tv_select_house_estate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10px"
+            android:drawableRight="@drawable/center_enter"
+            android:text=""
+            android:textColor="@color/text_black_999"
+            android:textSize="32px" />
+    </RelativeLayout>
+
+    <View
+        style="@style/view_line"
+        ></View>
+
+
+</LinearLayout>

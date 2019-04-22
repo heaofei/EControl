@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="20px" >
+    <Button
+        android:id="@+id/bt_edit"
+        android:layout_width="match_parent"
+        android:layout_height="114px"
+        android:background="@drawable/photo_gallery_selector"
+        android:text="编辑"
+        android:textColor="@color/text_blue"
+        android:textSize="36px" />
+    <View
+        style="@style/view_line"
+        />
+    <Button
+        android:id="@+id/bt_new"
+        android:layout_width="match_parent"
+        android:layout_height="114px"
+        android:background="@drawable/photo_new_selector"
+        android:text="新增"
+        android:textColor="@color/text_blue"
+        android:textSize="36px" />
+ <View
+     style="@style/view_line"
+     />
+    <Button
+        android:id="@+id/bt_delete"
+        android:layout_width="match_parent"
+        android:layout_height="114px"
+        android:background="@drawable/photo_camera_selector"
+        android:text="删除"
+        android:textColor="@color/text_reg"
+        android:textSize="36px" />
+    <Button
+        android:id="@+id/bt_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="114px"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/photo_cancel_selector"
+        android:text="@string/cancel"
+        android:textColor="@color/text_blue"
+        android:textSize="36px"
+        />
+</LinearLayout>

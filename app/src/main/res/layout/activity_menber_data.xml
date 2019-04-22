@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_background_grey"
+    android:orientation="vertical"
+    tools:context=".view.activity.UserInfoModifyActivity">
+
+    <include layout="@layout/incloud_title_layout2"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/com_white"
+        android:orientation="vertical">
+
+        <View style="@style/view_line20"
+            android:background="@color/view_background_grey"
+            ></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="166px">
+
+            <com.mxkj.econtrol.widget.CircleImageView
+                android:id="@+id/imv_header"
+                android:layout_width="120px"
+                android:layout_height="120px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="32px"
+                android:src="@drawable/ic_no_head"
+                app:border_color="#80e5e5e5"
+                app:border_overlay="true"
+                app:border_width="5px"
+                app:layout_auto_baseheight="width" />
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="24px"
+                android:drawablePadding="12px"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/text_black_666"
+                android:textSize="32px"
+                android:layout_toRightOf="@+id/imv_header"
+                android:layout_marginLeft="40px"
+                />
+            <TextView
+                android:id="@+id/tv_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="24px"
+                android:drawablePadding="12px"
+                android:drawableRight="@drawable/center_enter"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/text_black_999"
+                android:textSize="28px"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+        <View style="@style/view_line"
+            ></View>
+
+        <View style="@style/view_line20"
+            android:background="@color/view_background_grey"
+            android:visibility="gone"
+            ></View>
+
+
+        <RelativeLayout style="@style/FragmentMy_RelativeLayout"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/tv_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="设置备注"
+                android:textColor="@color/text_black_666"
+                android:textSize="32px" />
+
+            <EditText
+                android:id="@+id/edt_nick_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/tv_nick"
+                android:background="@null"
+                android:enabled="false"
+                android:gravity="right|center"
+                android:text="设置备注名"
+                android:inputType="phone"
+                android:maxLength="13"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:textColor="@color/text_black_999"
+                android:textSize="28px"
+                android:textColorHint="@color/text_black_c3c3c3"
+                />
+
+        </RelativeLayout>
+
+
+        <View style="@style/view_line20"
+            android:background="@color/view_background_grey"
+            ></View>
+
+
+        <RelativeLayout style="@style/FragmentMy_RelativeLayout">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="性别"
+                android:textColor="@color/text_black_666"
+                android:textSize="32px" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:id="@+id/imv_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="12px"
+                    android:src="@drawable/center_userinfo_choose_selected" />
+
+                <TextView
+                    android:id="@+id/tv_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/male"
+                    android:textSize="28px"
+                    android:layout_gravity="center_vertical"
+                    android:padding="12px"
+                    android:textColor="@color/text_black_999"
+                    />
+
+                <ImageView
+                    android:id="@+id/imv_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="62px"
+                    android:padding="12px"
+                    android:src="@drawable/center_userinfo_choose_default" />
+
+                <TextView
+                    android:id="@+id/tv_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/female"
+                    android:textColor="@color/text_black_999"
+                    android:textSize="28px"
+                    android:layout_marginLeft="12px"
+                    android:layout_gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textColor="@color/text_black_999"
+                    android:textSize="28px"
+                    android:layout_marginLeft="12px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_alignParentRight="true"
+                    />
+
+
+        </RelativeLayout>
+
+        <View style="@style/view_line"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            ></View>
+
+
+        <RelativeLayout style="@style/FragmentMy_RelativeLayout">
+
+            <TextView
+                android:id="@+id/tv_name01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="真实姓名"
+                android:textColor="@color/text_black_666"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/tv_name01"
+                android:background="@null"
+                android:enabled="false"
+                android:gravity="right|center"
+                android:hint=""
+                android:inputType="phone"
+                android:maxLength="13"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:textColor="@color/text_black_999"
+                android:textColorHint="#cccccc"
+                android:textSize="28px" />
+
+        </RelativeLayout>
+
+        <View style="@style/view_line"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            ></View>
+
+        <RelativeLayout
+            android:id="@+id/rl_birthday"
+            style="@style/FragmentMy_RelativeLayout"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="生日"
+                android:textColor="@color/text_black_666"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/tv_both"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="10px"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/text_black_999"
+                android:textSize="28px" />
+
+        </RelativeLayout>
+
+        <View style="@style/view_line"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            ></View>
+
+        <RelativeLayout
+            android:id="@+id/rl_address"
+            style="@style/FragmentMy_RelativeLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="所在地"
+                android:textColor="@color/text_black_666"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="10px"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/text_black_999"
+                android:textSize="28px" />
+        </RelativeLayout>
+
+        <View style="@style/view_line"
+            ></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="46px"
+                android:layout_height="46px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="24px"
+                android:src="@drawable/ic_delivery"
+                app:layout_auto_baseheight="width" />
+
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginLeft="100px"
+                android:background="@null"
+                android:hint="邮箱"
+                android:singleLine="true"
+                android:textColor="#444444"
+                android:textColorHint="#cccccc"
+                android:textSize="28px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#e5e5e5e5" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

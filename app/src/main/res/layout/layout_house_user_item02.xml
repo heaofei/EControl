@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1px"
+    android:orientation="vertical"
+    android:background="@color/com_white">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:id="@+id/rl_item"
+        >
+
+    <ImageView
+        android:id="@+id/iv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home_edit_choose_default"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="36px"
+        android:visibility="gone"
+        />
+
+    <com.mxkj.econtrol.widget.CircleImageView
+        android:id="@+id/imv_header_pic"
+        android:layout_width="72px"
+        android:layout_height="72px"
+        android:src="@drawable/family_del_unsettled"
+        app:layout_auto_baseheight="width"
+        android:layout_gravity="center"
+        android:layout_marginTop="10px"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_search"
+        android:layout_marginLeft="36px"
+        />
+
+      <!--  app:border_color="#80e5e5e5"
+        app:border_overlay="true"
+        app:border_width="4px"-->
+
+    <TextView
+        android:id="@+id/tv_nick_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nick"
+        android:textSize="26px"
+        android:textColor="@color/text_black_666"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/imv_header_pic"
+        android:layout_marginLeft="36px"
+        />
+    </RelativeLayout>
+    <View
+        style="@style/view_line"
+        ></View>
+
+
+</LinearLayout>

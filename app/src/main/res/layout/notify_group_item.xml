@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/com_white"
+    >
+
+    <View
+        android:id="@+id/viewline"
+        style="@style/view_line20"
+        ></View>
+
+    <TextView
+        android:id="@+id/tv_notify_group"
+        android:layout_width="match_parent"
+        android:layout_height="74px"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="37px"
+        android:text="万科xxxx"
+        android:textColor="@color/text_black_333"
+        android:textSize="28px"
+        android:layout_below="@+id/viewline"
+        />
+
+</RelativeLayout>

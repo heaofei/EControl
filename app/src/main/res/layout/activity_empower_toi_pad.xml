@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_white"
+    tools:context="com.mxkj.econtrol.view.activity.EmpowerToiPadActivity">
+
+
+    <include layout="@layout/incloud_title_layout6"
+        ></include>
+
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="222px"
+        android:layout_height="268px"
+        android:src="@drawable/ic_ipad_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200px"
+        />
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ipad登录确认"
+        android:textSize="28px"
+        android:textColor="@color/text_black_999"
+        android:layout_above="@+id/btn_comfig"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="154px"
+        android:layout_marginTop="100px"
+        android:visibility="visible"
+        android:layout_below="@+id/imageview"
+        />
+    <Button
+        android:id="@+id/btn_comfig"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_marginRight="106px"
+        android:layout_marginLeft="106px"
+        android:background="@drawable/login_regist_bg"
+        android:text="登录"
+        android:textSize="30px"
+        android:textColor="@color/com_white"
+        android:layout_marginBottom="34px"
+        android:layout_above="@+id/btn_clean"
+        />
+
+    <Button
+        android:id="@+id/btn_clean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:text="取消登录"
+        android:textSize="28px"
+        android:textColor="@color/text_black_666"
+        android:layout_marginBottom="120px"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        />
+
+</RelativeLayout>

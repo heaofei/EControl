@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_light_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_background_grey"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.mxkj.econtrol.view.activity.LightSettingActivity">
+
+    <include layout="@layout/incloud_title_layout2"></include>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="false"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <View
+                style="@style/view_line20"
+                android:background="@color/view_background_grey"></View>
+
+    <RelativeLayout
+        android:id="@+id/rl_name"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@color/com_white"
+        android:paddingLeft="36px">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="灯光名称"
+            android:textColor="@color/text_black_333"
+            android:textSize="32px" />
+
+        <com.mxkj.econtrol.widget.ClearEditText
+            android:id="@+id/ed_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tv_name"
+            android:background="@null"
+            android:gravity="center_vertical|right"
+            android:hint=""
+            android:maxLength="6"
+            android:paddingRight="36px"
+            android:textColor="@color/text_black_999"
+            android:textSize="28px"
+            android:drawablePadding="24px"
+            />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/view_line"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:visibility="gone"
+        ></View>
+
+    <RelativeLayout
+        android:id="@+id/rl_time"
+        style="@style/FragmentMy_RelativeLayout"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="定时"
+            android:textColor="@color/text_black_333"
+            android:textSize="32px" />
+
+        <ImageView
+            android:id="@+id/iv_timing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/text_black_999"
+            android:textSize="28px" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_timing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <View
+            style="@style/view_line20"
+            android:background="@color/view_background_grey"></View>
+
+        <RelativeLayout
+            android:id="@+id/rl_open"
+            style="@style/FragmentMy_RelativeLayout_Prass"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="开灯定时"
+                android:textColor="@color/text_black_333"
+                android:textSize="32px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/center_enter"
+                android:gravity="center"
+                android:textColor="@color/text_black_999"
+                android:textSize="28px" />
+        </RelativeLayout>
+
+        <View
+            style="@style/view_line"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"></View>
+
+        <RelativeLayout
+            android:id="@+id/rl_close"
+            style="@style/FragmentMy_RelativeLayout_Prass"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="关灯定时"
+                android:textColor="@color/text_black_333"
+                android:textSize="32px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/center_enter"
+                android:gravity="center"
+                android:textColor="@color/text_black_999"
+                android:textSize="28px" />
+        </RelativeLayout>
+
+        <View style="@style/view_line"></View>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/com_white"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <View
+            style="@style/view_line20"
+            android:background="@color/view_background_grey"></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36px"
+            android:layout_marginTop="30px"
+            android:gravity="center"
+            android:text="亮度"
+            android:textColor="@color/text_black_333"
+            android:textSize="32px" />
+
+        <FrameLayout
+            android:id="@+id/fl_wind_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="78px"
+            android:layout_marginRight="78px"
+            android:layout_marginTop="30px"
+            android:visibility="visible">
+
+            <SeekBar
+                android:id="@+id/seekbar_light"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:max="99"
+                android:maxHeight="5dp"
+                android:minHeight="5dp"
+                android:paddingBottom="20px"
+                android:paddingTop="20px"
+                android:progressDrawable="@drawable/progress_drawable"
+                android:secondaryProgress="0"
+                android:thumb="@drawable/icon_control_point3" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_seekbar_point01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12px"
+                    android:src="@drawable/icon_control_point_2"
+                    android:visibility="invisible" />
+
+                <View
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:layout_weight="1"></View>
+
+
+                <View
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:layout_weight="1"></View>
+
+
+                <View
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:layout_weight="1"></View>
+
+                <ImageView
+                    android:id="@+id/iv_seekbar_point04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12px"
+                    android:src="@drawable/icon_control_point_2" />
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60px"
+            android:layout_marginLeft="74px"
+            android:layout_marginRight="74px"
+            android:layout_marginTop="10px"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_stall01"
+                android:layout_width="48px"
+                android:layout_height="48px"
+                android:layout_marginLeft="12px"
+                android:src="@drawable/light1_default" />
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:layout_weight="1"></View>
+
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:layout_weight="1"></View>
+
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:layout_weight="1"></View>
+
+            <ImageView
+                android:id="@+id/iv_stall04"
+                android:layout_width="48px"
+                android:layout_height="48px"
+                android:layout_marginRight="10px"
+                android:src="@drawable/light4_default" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/com_white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            style="@style/view_line20"
+            android:background="@color/view_background_grey"></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36px"
+            android:layout_marginTop="30px"
+            android:gravity="center"
+            android:text="颜色"
+            android:textColor="@color/text_black_333"
+            android:textSize="32px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="72px"
+            android:layout_marginRight="72px"
+            android:layout_marginTop="50px"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_light_color_01"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_weight="1"
+                android:src="@drawable/ic_light_color_ordinary" />
+
+            <ImageView
+                android:id="@+id/iv_light_color_02"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_weight="1"
+                android:src="@drawable/ic_light_color_red" />
+
+            <ImageView
+                android:id="@+id/iv_light_color_03"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_weight="1"
+                android:src="@drawable/ic_light_color_pink" />
+
+            <ImageView
+                android:id="@+id/iv_light_color_04"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_weight="1"
+                android:src="@drawable/ic_light_color_purple" />
+
+            <ImageView
+                android:id="@+id/iv_light_color_05"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_weight="1"
+                android:src="@drawable/ic_light_color_blue" />
+
+            <ImageView
+                android:id="@+id/iv_light_color_06"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_weight="1"
+                android:src="@drawable/ic_light_color_cyan" />
+
+            <ImageView
+                android:id="@+id/iv_light_color_07"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_weight="1"
+                android:src="@drawable/ic_light_color_green" />
+        </LinearLayout>
+
+        <com.mxkj.econtrol.widget.ColorPickerView
+            android:id="@+id/color_picker_view"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="60px"
+            android:layout_marginTop="60px"
+            android:paddingBottom="20px"
+            android:paddingTop="20px"
+            app:indicatorColor="#00ffc8"
+            app:indicatorEnable="true"
+            app:orientation="horizontal" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

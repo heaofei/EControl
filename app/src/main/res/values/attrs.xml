@@ -1,0 +1,123 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+    <!-- 环形选择器的自定义属性 -->
+    <declare-styleable name="Circle_Selector">
+        <!-- 圆心的半径 -->
+        <attr name="circle_center_radius" format="integer"/>
+        <!-- 圆心颜色 -->
+        <attr name="circle_center_color" format="color"/>
+        <!-- 指针宽度 -->
+        <attr name="circle_point_width" format="integer"/>
+        <!-- 指针颜色 -->
+        <attr name="circle_point_color" format="color"/>
+        <!-- 选中项下的圆形背景半径 -->
+        <attr name="circle_target_radius" format="integer"/>
+        <!-- 选中项下的圆形背景颜色 -->
+        <attr name="circle_target_color" format="color"/>
+    </declare-styleable>
+
+
+    <attr name="firstColor" format="color" />
+    <attr name="nextColor" format="color" />
+    <attr name="dotCount" format="integer" />
+    <attr name="circleWidth" format="dimension" />
+    <attr name="splitSize" format="integer" />
+    <attr name="background" format="reference" />
+
+    <declare-styleable name="CircleVolumnControlView">
+        <attr name="firstColor" />
+        <attr name="nextColor" />
+        <attr name="dotCount" />
+        <attr name="circleWidth" />
+        <attr name="splitSize" />
+        <attr name="background" />
+    </declare-styleable>
+
+    <declare-styleable name="AutoTabLayout">
+
+        <attr name="auto_textSize_base_width" format="boolean"></attr>
+
+    </declare-styleable>
+
+
+    <declare-styleable name="SeekArc">
+        <attr name="thumb" format="reference" />
+        <attr name="thumbOffset" format="dimension" />
+        <attr name="max" format="integer" />
+        <attr name="progressWidth" format="dimension" />
+        <attr name="arcWidth" format="dimension" />
+        <attr name="progress" format="integer" />
+        <attr name="rotation" format="integer" />
+        <attr name="startAngle" format="integer" />
+        <attr name="sweepAngle" format="integer" />
+        <attr name="arcColor" format="color" />
+        <attr name="progressColor" format="color" />
+        <attr name="roundEdges" format="boolean" />
+        <attr name="touchInside" format="boolean" />
+        <attr name="clockwise" format="boolean" />
+        <attr name="enabled" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="SeekArcTheme">
+        <attr name="seekArcStyle" format="reference"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="CharIndexView">
+        <!-- 	banner背影色  	 -->
+        <!-- 索引字大小 -->
+        <attr name="indexTextSize" format="dimension"/>
+        <!-- 字颜色 -->
+        <attr name="charTextColor" format="color"/>
+        <!-- 索引字颜色 -->
+        <attr name="indexTextColor" format="color"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="LinearListView">
+        <attr name="android:entries" />
+        <attr name="dividerThickness" format="dimension" />
+    </declare-styleable>
+
+
+
+
+    <declare-styleable name="MyScrollView">
+        <attr name="putup" format="boolean"/>
+        <attr name="putdown" format="boolean"/>
+    </declare-styleable>
+
+    <!--取色板（旧）-->
+    <declare-styleable name="color_picker">
+        <!-- 背景圆的半径 -->
+        <attr name="circle_radius" format="dimension" />
+        <!-- 可滑动小球的半径 -->
+        <attr name="center_radius" format="dimension" />
+        <!-- 可滑动小球的颜色 -->
+        <attr name="center_color" format="color" />
+    </declare-styleable>
+
+    <!--取色条-->
+    <declare-styleable name="ColorPickerView">
+        <attr name="indicatorColor" format="color" /><!--指示点颜色-->
+        <attr name="indicatorEnable" format="boolean" /><!--是否启用指示点-->
+        <attr name="orientation" format="integer">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/view_background_grey"
+    tools:context="com.mxkj.econtrol.ui.activity.FeedBackActivity">
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/feedback_success"
+        android:layout_marginTop="184px"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24px"
+        android:text="@string/feedback_success"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60px"
+        android:textColor="@color/text_black_666"
+        android:textSize="36px"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/feedback_submit_result"
+        android:textColor="@color/text_black_999"
+        android:textSize="28px"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="48px"
+        android:layout_marginRight="48px"
+        />
+    </com.zhy.autolayout.AutoLinearLayout>
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_white"
+    android:orientation="vertical"
+    tools:context="com.mxkj.econtrol.view.activity.InformationCommentActivity">
+
+    <include layout="@layout/incloud_title_layout2"></include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="36px"
+        android:paddingRight="36px"
+        android:paddingTop="36px">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.mxkj.econtrol.widget.CircleImageView
+                android:id="@+id/imv_header_pic"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_no_head"
+                app:border_color="#80e5e5e5"
+                app:border_overlay="true"
+                app:border_width="0px"
+                app:layout_auto_baseheight="width" />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26px"
+                android:layout_marginTop="10px"
+                android:layout_toRightOf="@+id/imv_header_pic"
+                android:text=""
+                android:textColor="@color/text_black_999"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_user_name"
+                android:layout_marginLeft="26px"
+                android:layout_marginTop="10px"
+                android:layout_toRightOf="@+id/imv_header_pic"
+                android:text=""
+                android:textColor="@color/text_black_999"
+                android:textSize="24px" />
+
+
+            <TextView
+                android:id="@+id/tv_thumbUpCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26px"
+                android:layout_marginTop="10px"
+                android:text=""
+                android:textColor="@color/text_black_666"
+                android:textSize="24px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="36px"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2px"
+            android:layout_marginRight="36px"
+            android:layout_marginTop="30px"
+            android:text=""
+            android:textColor="@color/text_black_666"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/tv_linkcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:layout_marginLeft="2px"
+            android:layout_marginRight="36px"
+            android:layout_marginTop="30px"
+            android:background="@color/view_light_grey"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingBottom="12px"
+            android:paddingLeft="24px"
+            android:paddingRight="24px"
+            android:paddingTop="12px"
+            android:text=""
+            android:textColor="@color/text_black_666"
+            android:textSize="28px" />
+    </LinearLayout>
+
+
+    <View
+        style="@style/view_line"
+        android:layout_marginTop="16px"></View>
+
+
+    <LinearLayout
+        android:id="@+id/ll_comment_item"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:layout_marginBottom="16px"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/tv_comment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36px"
+            android:layout_marginTop="16px"
+            android:layout_marginBottom="16px"
+            android:layout_toRightOf="@+id/imv_header_pic"
+            android:text="评论"
+            android:textColor="@color/text_black_666"
+            android:textSize="30px" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+
+</LinearLayout>

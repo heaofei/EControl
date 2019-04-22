@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/com_white"
+    android:orientation="vertical"
+    tools:context="com.mxkj.econtrol.view.activity.StoreActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@color/app_backgroud">
+
+        <com.mxkj.econtrol.widget.CircleImageView
+            android:id="@+id/imv_user_header"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            app:border_color="#e5e5e5"
+            app:border_overlay="true"
+            android:layout_gravity="center_vertical"
+            app:border_width="2px"
+            app:layout_auto_baseheight="width"
+            android:layout_marginLeft="25px"
+            android:src="@drawable/ic_no_head" />
+
+        <RelativeLayout
+            android:layout_width="481px"
+            android:layout_height="52px"
+            android:layout_marginLeft="30px">
+
+
+            <EditText
+                android:id="@+id/edit_scan_content"
+                android:layout_width="481px"
+                android:layout_height="52px"
+                android:background="@drawable/search_bg_input"
+                android:hint="创造智能家居生活"
+                android:paddingLeft="45px"
+                android:textColorHint="#cccccc"
+                android:textSize="24px" />
+
+            <ImageView
+                android:layout_width="25px"
+                android:layout_height="25px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15px"
+                android:src="@drawable/search_icon_zoom" />
+
+            <ImageView
+                android:id="@+id/imv_clear"
+                android:layout_width="25px"
+                android:layout_height="25px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="15px"
+                android:src="@drawable/search_icon_empty" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="搜索"
+            android:textColor="#ffffff"
+            android:textSize="32px" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+        android:layout_gravity="center_horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_product_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:layout_margin="5dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="19px"
+        android:paddingRight="25px">
+
+        <me.hwang.widgets.SmartPullableLayout
+            android:id="@+id/smpl_product"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_house"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </me.hwang.widgets.SmartPullableLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="96px"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+            <TextView
+                android:id="@+id/tv_bottom_left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:drawableTop="@drawable/toolbar_icon_you_active"
+                android:gravity="center"
+                android:paddingTop="5px"
+                android:text="商城"
+                android:textColor="#f72971"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/tv_bottom_midle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:drawableTop="@drawable/toolbar_icon_homepage"
+                android:gravity="center"
+                android:padding="5px"
+                android:text="主页"
+                android:textColor="#cccccc" />
+
+            <TextView
+                android:id="@+id/tv_bottom_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:drawableTop="@drawable/toolbar_icon_manage"
+                android:gravity="center"
+                android:text="链家"
+                android:textColor="#cccccc" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_above="@id/ll_bottom"
+            android:background="#cccccc"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_background_grey"
+    android:orientation="vertical"
+    tools:context="com.mxkj.econtrol.ui.activity.AboutActivity">
+
+    <include layout="@layout/incloud_title_layout2"></include>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/view_background_grey"
+            android:orientation="vertical"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="@color/com_white"
+                android:paddingBottom="24px"
+                android:paddingLeft="24px"
+                android:paddingRight="24px"
+                android:paddingTop="24px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请拍摄身份证原件"
+                    android:textColor="@color/text_black_333"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="建议横屏拍摄"
+                    android:textColor="@color/com_blue"
+                    android:textSize="28px" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/com_white"
+                android:orientation="horizontal"
+                android:paddingLeft="18px"
+                android:paddingRight="18px">
+
+                <LinearLayout
+                    android:id="@+id/ll_sfz01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="18px"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_sfz01"
+                        android:layout_width="320px"
+                        android:layout_height="220px"
+                        android:src="@drawable/ic_sfz_bg01"
+                        android:scaleType="fitXY"
+                        />
+
+                    <ImageView
+                        android:layout_width="320px"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_sfz_bt01" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_sfz02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="18px"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_sfz02"
+                        android:layout_width="320px"
+                        android:layout_height="220px"
+                        android:src="@drawable/ic_sfz_bg02"
+                        android:scaleType="fitXY"
+                        />
+
+                    <ImageView
+                        android:layout_width="320px"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_sfz_bt02"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/com_white"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                android:paddingLeft="18px"
+                android:paddingRight="18px">
+
+                <LinearLayout
+                    android:id="@+id/ll_sfz03"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="18px"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_sfz03"
+                        android:layout_width="320px"
+                        android:layout_height="220px"
+                        android:src="@drawable/ic_sfz_bg03"
+                        android:scaleType="fitXY"
+                        />
+
+                    <ImageView
+                        android:layout_width="320px"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_sfz_bt03"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_sfz04"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="18px"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="258px"
+                android:layout_marginTop="20px"
+                android:background="@color/com_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="36px"
+                    android:layout_marginTop="30px"
+                    android:text="拍摄身份证要求"
+                    android:textColor="@color/text_black_333"
+                    android:textSize="28px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="36px"
+                    android:layout_marginLeft="16px"
+                    android:layout_marginRight="16px"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv01"
+                        android:layout_width="160px"
+                        android:layout_height="140px"
+                        android:layout_marginLeft="8px"
+                        android:layout_marginRight="8px"
+                        android:layout_weight="1"
+                        android:src="@drawable/example_01" />
+
+                    <ImageView
+                        android:id="@+id/iv02"
+                        android:layout_width="160px"
+                        android:layout_height="140px"
+                        android:layout_marginLeft="8px"
+                        android:layout_marginRight="8px"
+                        android:layout_weight="1"
+                        android:src="@drawable/example_02" />
+
+                    <ImageView
+                        android:id="@+id/iv03"
+                        android:layout_width="160px"
+                        android:layout_height="140px"
+                        android:layout_marginLeft="8px"
+                        android:layout_marginRight="8px"
+                        android:layout_weight="1"
+                        android:src="@drawable/example_03" />
+
+                    <ImageView
+                        android:id="@+id/iv04"
+                        android:layout_width="160px"
+                        android:layout_height="140px"
+                        android:layout_marginLeft="8px"
+                        android:layout_marginRight="8px"
+                        android:layout_weight="1"
+                        android:src="@drawable/example_04" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:layout_above="@+id/ll_bottom_psw"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="60px"
+                android:layout_marginLeft="106px"
+                android:layout_marginRight="106px"
+                android:layout_marginTop="46px"
+                android:background="@drawable/lock_submit_bg"
+                android:text="确认提交"
+                android:textColor="@color/com_white"
+                android:textSize="30px"
+                android:visibility="visible" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

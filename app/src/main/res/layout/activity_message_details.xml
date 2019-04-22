@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/view_background_grey"
+    tools:context="com.mxkj.econtrol.view.activity.HousePartInfoActivity">
+
+
+    <include
+        layout="@layout/incloud_title_layout2"
+        ></include>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:layout_marginTop="24px"
+            android:layout_marginBottom="24px"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:text=""/>
+
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>
+
+</LinearLayout>

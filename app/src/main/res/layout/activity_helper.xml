@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mxkj.econtrol.ui.activity.FeedBackActivity">
+
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/incloud_title_layout2"></include>
+
+    <ViewStub
+        android:id="@+id/stub_import"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:inflatedId="@+id/panel_import"
+        android:layout="@layout/viewstub_feedback" />
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="280px"
+            android:layout_above="@+id/tv_text_count"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/layout_radius_white12"
+            android:gravity="top|left"
+            android:hint="@string/feedback_tips"
+            android:maxLength="300"
+            android:padding="20px"
+            android:textColor="@color/text_black_666"
+            android:textColorHint="@color/text_black_c3c3c3"
+            android:textSize="32px"
+            android:lineSpacingMultiplier="1.2"
+            />
+
+        <TextView
+            android:id="@+id/tv_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18px"
+            android:layout_marginBottom="30px"
+            android:paddingLeft="44px"
+            android:text="@string/feedback_tips03"
+            android:textColor="@color/text_reg"
+            android:textSize="24px" />
+
+        <com.mxkj.econtrol.widget.ClearEditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:layout_above="@+id/tv_text_count"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:background="@drawable/layout_radius_white12"
+            android:gravity="center_vertical"
+            android:hint="@string/feedback_tips02"
+            android:inputType="number"
+            android:padding="20px"
+            android:textColor="@color/text_black_666"
+            android:textColorHint="@color/text_black_c3c3c3"
+            android:textSize="32px"
+            android:maxLength="11"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_submit"
+        android:layout_width="match_parent"
+        android:layout_height="86px"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="180px"
+        android:layout_marginLeft="80px"
+        android:layout_marginRight="80px"
+        android:background="@drawable/login_regist_bg_50opaque"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="@string/feedback_submit"
+        android:textColor="@color/com_white" />
+
+
+</RelativeLayout>

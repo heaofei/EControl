@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mxkj.econtrol.ui.activity.AboutActivity">
+
+    <include layout="@layout/incloud_title_layout2"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/com_background"
+        android:layout_height="357px">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48px"
+            >
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/iv_gifView"
+                android:layout_width="240px"
+                android:layout_height="240px"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                android:src="@drawable/ic_searching_lock"
+                />
+
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="正在搜索设备"
+                android:textColor="@color/text_orangereg02"
+                android:textSize="28px"
+                android:visibility="visible"
+                android:layout_margin="6px"
+                />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="已经搜索到0个设备"
+            android:textColor="@color/text_black_666"
+            android:textSize="24px"
+            android:layout_below="@+id/rl_search"
+            android:layout_marginTop="16px"
+            />
+    </RelativeLayout>
+
+
+    <com.mxkj.econtrol.widget.MyLinearLayout
+        android:id="@+id/ll_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10px"
+            android:paddingTop="10px"
+            android:background="@color/com_white"
+            android:visibility="visible"
+            ></android.support.v7.widget.RecyclerView>
+
+
+        <LinearLayout
+            android:id="@+id/ll_statue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:background="@color/com_white"
+            >
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未找到设备"
+                android:textSize="32px"
+                android:textColor="@color/text_black_333"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="160px"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.请确认已在门锁上设置管理员密码；"
+                android:textSize="28px"
+                android:textColor="@color/text_black_999"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60px"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.请确认在门锁上按下“3”“#”。"
+                android:textSize="28px"
+                android:textColor="@color/text_black_999"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20px"
+                />
+        </LinearLayout>
+
+
+
+    </com.mxkj.econtrol.widget.MyLinearLayout>
+
+
+</LinearLayout>

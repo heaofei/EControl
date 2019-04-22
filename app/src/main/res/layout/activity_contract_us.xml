@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mxkj.econtrol.ui.activity.PrivateAndPolicy">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@color/app_backgroud">
+
+        <ImageView
+            android:id="@+id/imv_back"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:src="@drawable/ic_back"
+            app:layout_auto_baseheight="width" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="联系我们"
+            android:textColor="@color/com_white"
+            android:textSize="36px" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25px"
+        android:text="FisWink是由广州方胜智能工程有限公司研发的一款智能家居遥控系统。我们拥有国内先进的智能家居产品集成技术，使用全球知名品牌“快思聪”的终端控制设备，并配备一支专业的售前及售后技术团队，为每个家庭提供完善的智能家居产品解决方案。"
+        android:textSize="28px" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25px"
+        android:text="服务热线：020-37804952" />
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mxkj.econtrol.ui.activity.AboutActivity">
+    <include
+        layout="@layout/incloud_title_layout2"
+        ></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    广州方胜智能工程有限公司是一家智能家居整体解决方案提供商，我们为住宅、别墅提供高端定制的智能家居解决方案。通过智能手机和智能面，我们为住宅、别墅提供高端定制的智能家居解决方案。通过智能手机和智能面板对智能家居产品进行控制、监控和使用，将家庭各个家电家居产品，以综合布线方式联动整个家居网络控制系统。公司成立至今已为约一万户家庭提供了多种定制的智能家居方案，覆盖广州、上海、北京、天津、珠海等发达城市，其中包含家居音乐系统、智能灯具系统、家居新风空调系统、自动窗帘系统、红外感应灯系统、可视化门禁安防系统、电子门锁控制系统、电气检测系统等等。
+\n\n
+    公司拥有行内专业的智能家居设计调试，安装测试的工程师队伍，为每一个智能家居用户提供一条龙式的智能家居解决方案，全面的售前咨询及稳定的售后跟进服务，确保每个家庭都能以良好的用户体验去感受新科技带来的生活乐趣。
+\n\n
+    联系方式：020-3780 4952\n
+    联系部门：软件开发部\n
+    地址：广东省广州市广州大道中307号富力新天地3005室。
+"
+        android:layout_margin="24px"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@color/text_black_666"
+        android:textSize="26px"
+        />
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_regist_company"
+            android:layout_centerHorizontal="true"
+            android:textSize="20px"
+            android:textColor="@color/text_black_999"
+            android:layout_marginBottom="8px"
+            android:layout_above="@+id/tv"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/login_regist_company02"
+            android:layout_centerHorizontal="true"
+            android:textSize="20px"
+            android:textColor="@color/text_black_999"
+            android:layout_marginBottom="16px"
+            />
+    </LinearLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

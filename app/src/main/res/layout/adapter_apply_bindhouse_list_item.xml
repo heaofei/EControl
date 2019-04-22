@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1px"
+    android:id="@+id/item_layout"
+    android:orientation="vertical"
+    android:background="@null"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_bind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_radius_white20"
+        >
+
+        <com.mxkj.econtrol.widget.CircleImageView
+            android:id="@+id/imv_header_pic"
+            android:layout_width="88px"
+            android:layout_height="88px"
+            android:layout_marginRight="6px"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="40px"
+            android:src="@drawable/ic_no_head"
+            app:border_color="#80e5e5e5"
+            app:border_overlay="true"
+            app:border_width="2px"
+            app:layout_auto_baseheight="width"
+            />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30px"
+            android:text=""
+            android:textColor="@color/text_black_333"
+            android:paddingBottom="14px"
+            android:paddingTop="44px"
+            android:paddingLeft="32px"
+            android:paddingRight="32px"
+            android:layout_toRightOf="@+id/imv_header_pic"
+            android:layout_marginRight="40px"
+            />
+
+         <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28px"
+            android:text=""
+            android:textColor="@color/text_black_999"
+            android:paddingLeft="32px"
+            android:paddingRight="32px"
+            android:layout_toRightOf="@+id/imv_header_pic"
+             android:layout_below="@+id/tv_nickname"
+             android:layout_marginBottom="24px"
+             android:layout_marginRight="40px"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/imv_header_pic"
+            android:layout_below="@+id/tv_content"
+            android:layout_marginRight="40px"
+            android:layout_marginBottom="24px"
+            android:layout_marginLeft="32px"
+            >
+
+
+            <TextView
+                android:id="@+id/tv_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28px"
+                android:text="同意"
+                android:textColor="@color/com_white"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:paddingTop="12px"
+                android:paddingBottom="12px"
+                android:layout_toRightOf="@+id/imv_header_pic"
+                android:layout_below="@+id/tv_nickname"
+                android:background="@drawable/layout_blue_white16"
+                />
+
+            <TextView
+                android:id="@+id/tv_refuse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28px"
+                android:text="拒绝"
+                android:textColor="@color/com_white"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:paddingTop="12px"
+                android:paddingBottom="12px"
+                android:layout_toRightOf="@+id/imv_header_pic"
+                android:layout_below="@+id/tv_nickname"
+                android:background="@drawable/layout_red_white16"
+                android:layout_marginLeft="22px"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        style="@style/view_line"
+        android:layout_marginRight="24px"
+        android:layout_marginLeft="24px"
+        ></View>
+
+
+
+</LinearLayout>

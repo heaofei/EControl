@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_white"
+    android:orientation="vertical"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <View
+        android:id="@+id/title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="80px"
+        android:visibility="gone"
+        ></View>
+
+    <FrameLayout
+        android:id="@+id/fl_blower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50px"
+        >
+    <ImageView
+        android:id="@+id/imv_blower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon_freshairmachine_2"
+        android:layout_gravity="center"
+        />
+        <ImageView
+        android:id="@+id/imv_blower2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon_freshairmachine_1"
+        android:layout_gravity="center"
+        />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_wind_pm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68px"
+        android:text="PM2.5 (ug/m3)"
+        android:textColor="@color/text_black_999"
+        android:visibility="visible"
+        android:textSize="28px"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/tv_pm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24px"
+        android:text=""
+        android:textColor="@color/text_orangereg02"
+        android:visibility="visible"
+        android:textSize="120px"
+        android:layout_gravity="center_horizontal"
+
+        />
+
+    <FrameLayout
+        android:id="@+id/fl_wind_speed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80px"
+        android:layout_marginRight="80px"
+        android:layout_marginTop="40px"
+        android:visibility="visible"
+        >
+
+
+
+        <SeekBar
+            android:id="@+id/win_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:thumb="@drawable/icon_control_point3"
+            android:progressDrawable="@drawable/progress_drawable"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:minHeight="5dp"
+            android:maxHeight="5dp"
+            android:max="20"
+            android:secondaryProgress="0"
+            android:layout_gravity="center"
+            android:paddingTop="20px"
+            android:paddingBottom="20px"
+            />
+
+        <ImageView
+            android:id="@+id/iv_point_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_control_point_2"
+            android:layout_gravity="left|center_vertical"
+            android:visibility="invisible"
+            android:layout_marginLeft="12px"
+            />
+
+        <ImageView
+            android:id="@+id/iv_point_midle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_control_point_2"
+            android:layout_gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/iv_point_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_control_point_2"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="12px"
+            />
+
+        <TextView
+            android:id="@+id/tv_point_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="低速"
+            android:layout_marginTop="100px"
+            android:textColor="@color/text_black_c3c3c3"
+            />
+        <TextView
+            android:id="@+id/tv_point_midle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100px"
+            android:text="中速"
+            android:textColor="@color/text_black_c3c3c3"
+            />
+        <TextView
+            android:id="@+id/tv_point_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="100px"
+            android:text="高速"
+            android:textColor="@color/text_black_c3c3c3"
+            />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/bottom_view"
+        android:layout_width="wrap_content"
+        android:layout_height="172px"
+        android:visibility="gone"
+        ></View>
+
+    <ImageView
+        android:id="@+id/imv_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72px"
+        android:src="@drawable/ic_bt_closed"
+        app:layout_auto_basewidth="height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="80px"
+        />
+</LinearLayout>
+
+</ScrollView>

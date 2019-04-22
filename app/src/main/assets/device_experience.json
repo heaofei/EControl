@@ -1,0 +1,1331 @@
+{
+  "house": {
+    "buiding": "18栋",
+    "estate": "智慧小区",
+    "houseNo": "体验区",
+    "id": "ff8080816513a1000165cc6ac10a05cd"
+  },
+  "master": {
+    "headPicuture": "/img/user/head/2017/12/27/135110_673043.png",
+    "realName": "",
+    "userId": "ff8080815f2d4436015f2d93b6f80009",
+    "userName": "17620999268"
+  },
+  "modelList": [
+    {
+      "code": "MD001",
+      "name": "回家模块",
+      "value": "01"
+    },
+    {
+      "code": "MD001",
+      "name": "离家模块",
+      "value": "00"
+    }
+  ],
+  "msg": "SUCCESS",
+  "sceneList": [
+    {
+      "code": "CY-001",
+      "device": "GDGZYXFL0100000",
+      "houseId": "ff8080816513a1000165cc6ac10a05cd",
+      "id": "体验常用",
+      "name": "常用",
+      "scencePic": "",
+      "smallPic": "",
+      "smallSelectPic": "",
+      "type": "HY"
+    },
+    {
+      "code": "KT-001",
+      "device": "GDGZYXFL0100000",
+      "houseId": "ff8080816513a1000165cc6ac10a05cd",
+      "id": "ff8080816513a1000165cc6bba1e05d2",
+      "name": "客厅",
+      "scencePic": "/img/scence/KT_old.ico",
+      "smallPic": "/img/scence/KT.ico",
+      "smallSelectPic": "/img/scence/selectKT.ico",
+      "type": "KT"
+    },
+    {
+      "code": "CT-001",
+      "device": "GDGZYXFL0100000",
+      "houseId": "ff8080816513a1000165cc6ac10a05cd",
+      "id": "ff8080816513a1000165cc6bf9a305d3",
+      "name": "餐厅",
+      "scencePic": "/img/scence/CF_old.ico",
+      "smallPic": "/img/scence/CT.ico",
+      "smallSelectPic": "/img/scence/selectCT.ico",
+      "type": "CT"
+    },
+    {
+      "code": "CF-001",
+      "device": "GDGZYXFL0100000",
+      "houseId": "ff8080816513a1000165cc6ac10a05cd",
+      "id": "ff8080816513a1000165cc6c434405d4",
+      "name": "厨房",
+      "scencePic": "/img/scence/20180423173933.png",
+      "smallPic": "/img/scence/CF.ico",
+      "smallSelectPic": "/img/scence/selectCF.ico",
+      "type": "CF"
+    },
+    {
+      "code": "ZW-001",
+      "device": "GDGZYXFL0100000",
+      "houseId": "ff8080816513a1000165cc6ac10a05cd",
+      "id": "ff8080816513a1000165cc6c7dab05d5",
+      "name": "主卧",
+      "scencePic": "/img/scence/1.ico",
+      "smallPic": "/img/scence/20180424103554.ico",
+      "smallSelectPic": "/img/scence/select20180424103554.ico",
+      "type": "ZW"
+    },
+    {
+      "code": "CW-001",
+      "device": "GDGZYXFL0100000",
+      "houseId": "ff8080816513a1000165cc6ac10a05cd",
+      "id": "ff8080816513a1000165cc6cc12e05d6",
+      "name": "次卧",
+      "scencePic": "/img/scence/20180424103504.ico",
+      "smallPic": "/img/scence/20180424103505.ico",
+      "smallSelectPic": "/img/scence/select20180424103505.ico",
+      "type": "CW"
+    },
+    {
+      "code": "SF-001",
+      "device": "GDGZYXFL0100000",
+      "houseId": "ff8080816513a1000165cc6ac10a05cd",
+      "id": "ff8080816513a1000165cc6cf32305d7",
+      "name": "书房",
+      "scencePic": "/img/scence/SF_old.ico",
+      "smallPic": "/img/scence/SF.ico",
+      "smallSelectPic": "/img/scence/selectSF.ico",
+      "type": "SF"
+    }
+  ],
+  "serviceUrl": "",
+  "smInfoBean": {
+    "room": [
+      {
+        "code": "HY-001",
+        "id": "ff8080816513a1000165cc6ac10e05ce",
+        "isScene": "1",
+        "name": "常用",
+        "order": 1,
+        "sceneType": {
+          "cCode": "HY",
+          "cDes": "",
+          "cName": "入户花园",
+          "cOrder": 1,
+          "cStatus": "00",
+          "cValue": "HY",
+          "iPid": "40288f815c0fa164015c0faa97470003",
+          "id": "40288f815c0fa164015c0fabf5e40006"
+        },
+        "state": "1"
+      },
+      {
+        "code": "KT-001",
+        "id": "ff8080816513a1000165cc6bba1e05d2",
+        "isScene": "1",
+        "name": "客厅",
+        "order": 2,
+        "sceneType": {
+          "cCode": "KT",
+          "cDes": "",
+          "cName": "客厅",
+          "cOrder": 8,
+          "cStatus": "00",
+          "cValue": "KT",
+          "iPid": "40288f815c0fa164015c0faa97470003",
+          "id": "40288f815c0fa164015c0fc8943b0018"
+        },
+        "state": "1"
+      },
+      {
+        "code": "CT-001",
+        "id": "ff8080816513a1000165cc6bf9a305d3",
+        "isScene": "1",
+        "name": "餐厅",
+        "order": 3,
+        "sceneType": {
+          "cCode": "CT",
+          "cDes": "",
+          "cName": "餐厅",
+          "cOrder": 4,
+          "cStatus": "00",
+          "cValue": "CT",
+          "iPid": "40288f815c0fa164015c0faa97470003",
+          "id": "40288f815c0fa164015c0faefce6000f"
+        },
+        "state": "1"
+      },
+      {
+        "code": "CF-001",
+        "id": "ff8080816513a1000165cc6c434405d4",
+        "isScene": "1",
+        "name": "厨房",
+        "order": 4,
+        "sceneType": {
+          "cCode": "CF",
+          "cDes": "",
+          "cName": "厨房",
+          "cOrder": 7,
+          "cStatus": "00",
+          "cValue": "CF",
+          "iPid": "40288f815c0fa164015c0faa97470003",
+          "id": "40288f815c0fa164015c0fc7727f0016"
+        },
+        "state": "1"
+      },
+      {
+        "code": "ZW-001",
+        "id": "ff8080816513a1000165cc6c7dab05d5",
+        "isScene": "1",
+        "name": "主卧",
+        "order": 5,
+        "sceneType": {
+          "cCode": "ZW",
+          "cDes": "",
+          "cName": "主卧",
+          "cOrder": 2,
+          "cStatus": "00",
+          "cValue": "ZW",
+          "iPid": "40288f815c0fa164015c0faa97470003",
+          "id": "40288f815c0fa164015c0fad8c96000a"
+        },
+        "state": "1"
+      },
+      {
+        "code": "CW-001",
+        "id": "ff8080816513a1000165cc6cc12e05d6",
+        "isScene": "1",
+        "name": "次卧",
+        "order": 6,
+        "sceneType": {
+          "cCode": "CW",
+          "cDes": "",
+          "cName": "次卧",
+          "cOrder": 3,
+          "cStatus": "00",
+          "cValue": "CW",
+          "iPid": "40288f815c0fa164015c0faa97470003",
+          "id": "40288f815c0fa164015c0fae2ebc000c"
+        },
+        "state": "1"
+      },
+      {
+        "code": "SF-001",
+        "id": "ff8080816513a1000165cc6cf32305d7",
+        "isScene": "1",
+        "name": "书房",
+        "order": 7,
+        "sceneType": {
+          "cCode": "SF",
+          "cDes": "",
+          "cName": "书房",
+          "cOrder": 9,
+          "cStatus": "00",
+          "cValue": "SF",
+          "iPid": "40288f815c0fa164015c0faa97470003",
+          "id": "40288f815c2ecb2d015c2ecdee5a0001"
+        },
+        "state": "1"
+      }
+    ],
+    "roomPart": [
+      [
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "LI015",
+          "functions": {
+            "a": 1,
+            "d": 0,
+            "rgb": 0
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc6ac11105cf",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "客厅灯带",
+          "permissions": "d,a,rgb",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "1"
+        },
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "LI016",
+          "functions": {
+            "a": 1,
+            "d": 0,
+            "rgb": 0
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc6ac11305d0",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "客厅吊灯",
+          "permissions": "d,a,rgb",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "1"
+        },
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "AC007",
+          "functions": {
+            "a": 1,
+            "f": 1,
+            "m": 1,
+            "t": 1
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc6ac11405d1",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "客厅空调",
+          "permissions": "f,t,a,m",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "2"
+        },
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "LI017",
+          "functions": {
+            "a": 1,
+            "d": 0,
+            "rgb": 0
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc6fc5a605d8",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "餐厅吊灯",
+          "permissions": "d,a,rgb",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "1"
+        },
+        {
+          "brand": {
+            "code": "02",
+            "id": "ff80808162dcb3a30162dcb96af10005",
+            "name": "青松"
+          },
+          "code": "LK002",
+          "functions": {
+            "a": 1,
+            "tp": 1
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc7036a105d9",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "智能门锁",
+          "permissions": "",
+          "power": "1",
+          "rgb": "",
+          "state": {
+            "lockState": {
+              "applyGesturePasswordStatus": "notSubmited",
+              "gesturePasswordStatus": "uninited"
+            }
+          },
+          "stateTimer": "0",
+          "type": "5"
+        },
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "LI018",
+          "functions": {
+            "a": 1,
+            "d": 0,
+            "rgb": 0
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc70b0c105da",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "主卧灯带",
+          "permissions": "d,a,rgb",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "1"
+        },
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "AC008",
+          "functions": {
+            "a": 1,
+            "f": 1,
+            "m": 1,
+            "t": 1
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc7144b705db",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "主卧空调",
+          "permissions": "f,t,a,m",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "2"
+        },
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "LI019",
+          "functions": {
+            "a": 1,
+            "d": 0,
+            "rgb": 0
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc7197be05dc",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "主卧阅读灯",
+          "permissions": "d,a,rgb",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "1"
+        },
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "LI020",
+          "functions": {
+            "a": 1,
+            "d": 0,
+            "rgb": 0
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc72195505dd",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "次卧吊灯",
+          "permissions": "d,a,rgb",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "1"
+        },
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "CU005",
+          "functions": {
+            "a": 1
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc72ea0305de",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "书房窗帘",
+          "permissions": "a",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "4"
+        }
+      ],
+      [
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "LI001",
+          "functions": {
+            "a": 1,
+            "d": 0,
+            "rgb": 0
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc734c3305df",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "玄关射灯",
+          "permissions": "d,a,rgb",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "1"
+        },
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "LI002",
+          "functions": {
+            "a": 1,
+            "d": 0,
+            "rgb": 0
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc73908605e0",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "客厅灯带",
+          "permissions": "d,a,rgb",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "1"
+        },
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "LI003",
+          "functions": {
+            "a": 1,
+            "d": 0,
+            "rgb": 0
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc73d2c205e1",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "客厅吊灯",
+          "permissions": "d,a,rgb",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "1"
+        },
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "LI004",
+          "functions": {
+            "a": 1,
+            "d": 0,
+            "rgb": 0
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc742fc105e2",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "客厅射灯",
+          "permissions": "d,a,rgb",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "1"
+        },
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "LI005",
+          "functions": {
+            "a": 1,
+            "d": 0,
+            "rgb": 0
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc7478a105e3",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "客厅壁灯",
+          "permissions": "d,a,rgb",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "1"
+        },
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "AC001",
+          "functions": {
+            "a": 1,
+            "f": 1,
+            "m": 1,
+            "t": 1
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc751d6d05e4",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "客厅空调",
+          "permissions": "f,t,a,m",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "2"
+        },
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "CU001",
+          "functions": {
+            "a": 1
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc76e9cb05e5",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "客厅窗帘",
+          "permissions": "a",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "4"
+        },
+        {
+          "brand": {
+            "code": "02",
+            "id": "ff80808162dcb3a30162dcb96af10005",
+            "name": "青松"
+          },
+          "code": "LK001",
+          "functions": {
+            "a": 1,
+            "tp": 1
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc7749ef05e6",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "智能门锁",
+          "permissions": "",
+          "power": "1",
+          "rgb": "",
+          "state": {
+            "lockState": {
+              "applyGesturePasswordStatus": "notSubmited",
+              "gesturePasswordStatus": "uninited"
+            }
+          },
+          "stateTimer": "0",
+          "type": "5"
+        }
+      ],
+      [
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "LI006",
+          "functions": {
+            "a": 1,
+            "d": 0,
+            "rgb": 0
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc78104a05e7",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "餐厅灯带",
+          "permissions": "d,a,rgb",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "1"
+        },
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "LI007",
+          "functions": {
+            "a": 1,
+            "d": 0,
+            "rgb": 0
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc78640905e8",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "餐厅吊灯",
+          "permissions": "d,a,rgb",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "1"
+        },
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "AC002",
+          "functions": {
+            "a": 1,
+            "f": 1,
+            "m": 1,
+            "t": 1
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc78b6cf05e9",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "餐厅空调",
+          "permissions": "f,t,a,m",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "2"
+        }
+      ],
+      [
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "AC003",
+          "functions": {
+            "a": 1,
+            "f": 1,
+            "m": 1,
+            "t": 1
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc7928cf05ea",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "厨房空调",
+          "permissions": "f,t,a,m",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "2"
+        },
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "NF001",
+          "functions": {
+            "a": 1,
+            "f": 1
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc7997bd05eb",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "厨房新风",
+          "permissions": "f,a",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "3"
+        }
+      ],
+      [
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "LI008",
+          "functions": {
+            "a": 1,
+            "d": 0,
+            "rgb": 0
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc79eb3705ec",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "主卧灯带",
+          "permissions": "d,a,rgb",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "1"
+        },
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "LI009",
+          "functions": {
+            "a": 1,
+            "d": 0,
+            "rgb": 0
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc7a430605ed",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "主卧吊灯",
+          "permissions": "d,a,rgb",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "1"
+        },
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "LI010",
+          "functions": {
+            "a": 1,
+            "d": 0,
+            "rgb": 0
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc7a85bd05ee",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "主卧阅读灯",
+          "permissions": "d,a,rgb",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "1"
+        },
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "LI011",
+          "functions": {
+            "a": 1,
+            "d": 0,
+            "rgb": 0
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc7addb505ef",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "主卧浴室灯",
+          "permissions": "d,a,rgb",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "1"
+        },
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "CU002",
+          "functions": {
+            "a": 1
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc7b1da905f0",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "主卧窗帘",
+          "permissions": "a",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "4"
+        },
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "AC004",
+          "functions": {
+            "a": 1,
+            "f": 1,
+            "m": 1,
+            "t": 1
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc7b79bc05f1",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "主卧空调",
+          "permissions": "f,t,a,m",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "2"
+        }
+      ],
+      [
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "LI012",
+          "functions": {
+            "a": 1,
+            "d": 0,
+            "rgb": 0
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc7be87b05f2",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "次卧灯带",
+          "permissions": "d,a,rgb",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "1"
+        },
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "LI013",
+          "functions": {
+            "a": 1,
+            "d": 0,
+            "rgb": 0
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc7c28da05f3",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "次卧吊灯",
+          "permissions": "d,a,rgb",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "1"
+        },
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "AC005",
+          "functions": {
+            "a": 1,
+            "f": 1,
+            "m": 1,
+            "t": 1
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc7c7df905f4",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "次卧空调",
+          "permissions": "f,t,a,m",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "2"
+        },
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "CU003",
+          "functions": {
+            "a": 1
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc7cbb2205f5",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "次卧窗帘",
+          "permissions": "a",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "4"
+        }
+      ],
+      [
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "LI014",
+          "functions": {
+            "a": 1,
+            "d": 0,
+            "rgb": 0
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc7d0e8d05f6",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "书房吊灯",
+          "permissions": "d,a,rgb",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "1"
+        },
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "AC006",
+          "functions": {
+            "a": 1,
+            "f": 1,
+            "m": 1,
+            "t": 1
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc7d568005f7",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "书房空调",
+          "permissions": "f,t,a,m",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "2"
+        },
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "CU004",
+          "functions": {
+            "a": 1
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc7dd9d705f8",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "书房窗帘",
+          "permissions": "a",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "4"
+        },
+        {
+          "brand": {
+            "code": "00",
+            "id": "",
+            "name": "无"
+          },
+          "code": "AG001",
+          "functions": {
+            "a": 1
+          },
+          "gateway": {
+            "id": "",
+            "name": "",
+            "snid": ""
+          },
+          "id": "ff8080816513a1000165cc7e2ea105f9",
+          "kt_f": "",
+          "kt_m": "",
+          "kt_t": "",
+          "name": "雾化玻璃",
+          "permissions": "a",
+          "power": "1",
+          "rgb": "",
+          "state": {},
+          "stateTimer": "0",
+          "type": "6"
+        }
+      ]
+    ]
+  },
+  "state": "0000",
+  "thePartUrl": ""
+}

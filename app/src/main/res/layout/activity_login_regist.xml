@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_login_bg"
+    android:orientation="vertical"
+    tools:context="com.mxkj.econtrol.ui.activity.AboutActivity">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/popup_fail"
+        android:padding="48px"
+        android:layout_marginTop="48px"
+        />
+
+    <ImageView
+        android:id="@+id/iv_hear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/ic_logo03" />
+
+    <TextView
+        android:id="@+id/tv_zhizao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_hear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26px"
+        android:text="智  造  好  生  活 "
+        android:textColor="@color/com_white"
+        android:textSize="28px" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="86px"
+            android:layout_marginTop="400px"
+            android:background="@drawable/login_regist_bg_white360"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textColor="#5F5F5F"
+            android:textSize="30px"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_huo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_login"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24px"
+            android:text="或"
+            android:textColor="@color/com_white"
+            android:textSize="28px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btn_regist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:elevation="20dp"
+                android:gravity="center"
+                android:text="@string/regist"
+                android:textColor="@color/com_white"
+                android:textSize="28px"
+                />
+            <View
+                android:layout_width="1px"
+                android:layout_height="30px"
+                android:layout_gravity="center"
+                android:background="@color/com_white"></View>
+            <Button
+                android:id="@+id/btn_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:elevation="20dp"
+                android:gravity="center"
+                android:text="体验一下"
+                android:textColor="@color/com_white"
+                android:textSize="28px"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8px"
+        android:text="@string/login_regist_company"
+        android:textColor="#99ffffff"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16px"
+        android:text="@string/login_regist_company02"
+        android:textColor="#99ffffff"
+        android:textSize="20px" />
+
+</RelativeLayout>

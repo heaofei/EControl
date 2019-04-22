@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10px"
+    android:background="@drawable/white_gray_bg_selector"
+    android:orientation="vertical"
+    android:padding="20px">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.mxkj.econtrol.widget.CircleImageView
+            android:id="@+id/imv_header_pic"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_no_head"
+            app:border_color="#80e5e5e5"
+            app:border_overlay="true"
+            app:border_width="2px"
+            app:layout_auto_baseheight="width" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="91px"
+            android:text="用户"
+            android:textColor="#222222"
+            android:textSize="33px" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24px"
+            android:text="2323"
+            android:textColor="#888888"
+            android:textSize="24px" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20px"
+        android:layout_marginTop="30px"
+        android:text="哈哈哈哈或"
+        android:textColor="#444444"
+        android:textSize="28px" />
+
+
+    <ImageView
+        android:id="@+id/imv_community_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px">
+
+        <TextView
+            android:id="@+id/tv_estate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="广州·天河"
+            android:textColor="#888888"
+            android:textSize="24px" />
+
+        <ImageView
+            android:id="@+id/imv_start"
+            android:layout_width="46px"
+            android:layout_height="46px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6px"
+            android:layout_toLeftOf="@id/tv_trumb_up"
+            android:clickable="true"
+            android:src="@drawable/icon_good"
+            app:layout_auto_baseheight="width" />
+
+        <TextView
+            android:id="@+id/tv_trumb_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="92px"
+            android:layout_toLeftOf="@id/tv_comment"
+            android:text="12"
+            android:textColor="#888888"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="48px"
+            android:text="34"
+            android:textColor="#888888"
+            android:textSize="24px" />
+
+        <ImageView
+            android:layout_width="46px"
+            android:layout_height="46px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6px"
+            android:layout_toLeftOf="@id/tv_comment"
+            android:src="@drawable/ic_comment"
+            app:layout_auto_baseheight="width" />
+
+        <ImageView
+            android:layout_width="46px"
+            android:layout_height="46px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_more"
+            android:visibility="invisible"
+            app:layout_auto_baseheight="width" />
+    </RelativeLayout>
+
+
+</LinearLayout>

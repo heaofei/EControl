@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mxkj.econtrol.ui.activity.AboutActivity">
+
+    <include layout="@layout/incloud_title_layout2"></include>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_locksetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="@color/com_white"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="门锁设置"
+            android:layout_marginLeft="34px"
+            android:layout_marginTop="16px"
+            android:layout_marginBottom="16px"
+            android:textColor="@color/text_black_333"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_lock"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:background="@color/com_white"
+        >
+        <ImageView
+            android:id="@+id/iv_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_icon_mensuo"
+            android:layout_marginLeft="24px"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_unbind_lock"
+            android:layout_toRightOf="@+id/iv_lock"
+            android:layout_marginRight="34px"
+            android:layout_marginLeft="24px"
+            android:layout_centerVertical="true"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/text_black_333"
+            />
+        <TextView
+            android:id="@+id/tv_unbind_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="34px"
+            android:text="解绑"
+            android:textColor="@color/com_white"
+            android:background="@drawable/layout_blue_white16"
+            android:paddingTop="10px"
+            android:paddingBottom="10px"
+            android:paddingLeft="36px"
+            android:paddingRight="36px"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_gateway"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:background="@color/com_white"
+        >
+        <View
+            style="@style/view_line"
+            ></View>
+        <ImageView
+            android:id="@+id/iv_gateway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_icon_wangguan"
+            android:layout_marginLeft="24px"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_gateway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_unbind_gateway"
+            android:layout_toRightOf="@+id/iv_gateway"
+            android:layout_marginRight="34px"
+            android:layout_marginLeft="24px"
+            android:layout_centerVertical="true"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/text_black_333"
+            />
+        <TextView
+            android:id="@+id/tv_unbind_gateway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="34px"
+            android:text="解绑"
+            android:textColor="@color/com_white"
+            android:background="@drawable/layout_blue_white16"
+            android:paddingTop="10px"
+            android:paddingBottom="10px"
+            android:paddingLeft="36px"
+            android:paddingRight="36px"
+            />
+    </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="@color/com_white"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开锁权限"
+            android:layout_marginLeft="34px"
+            android:layout_marginTop="16px"
+            android:layout_marginBottom="16px"
+            android:textColor="@color/text_black_333"
+            />
+    </RelativeLayout>
+
+    <com.mxkj.econtrol.widget.MyLinearLayout
+        android:id="@+id/ll_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10px"
+            android:paddingTop="10px"
+            android:background="@color/com_white"
+            ></android.support.v7.widget.RecyclerView>
+    </com.mxkj.econtrol.widget.MyLinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    tools:context="com.mxkj.econtrol.view.activity.EditDeviceListActivity">
+
+    <include
+        layout="@layout/incloud_title_layout2"></include>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:id="@+id/rl_edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:paddingRight="36px"
+                android:paddingLeft="36px"
+                android:background="@color/com_white"
+                android:visibility="visible"
+                >
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="场景名称"
+                    android:textSize="32px"
+                    android:textColor="@color/text_black_666"
+                    />
+
+                <com.mxkj.econtrol.widget.ClearEditText
+                    android:id="@+id/ed_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/tv"
+                    android:background="@null"
+                    android:paddingTop="12px"
+                    android:paddingBottom="12px"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:paddingRight="12px"
+                    android:textColor="@color/text_black_333"
+                    android:textColorHint="@color/text_black_999"
+                    android:textSize="28px"
+                    android:hint="场景模式名称"
+                    android:drawablePadding="16px"
+                    android:maxLength="4"
+                    />
+            </RelativeLayout>
+
+           <!-- <ExpandableListView
+                android:id="@+id/expandableListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:childDivider="@null"
+                android:clickable="false"
+                android:divider="@null"
+                android:groupIndicator="@null" />-->
+
+            <com.mxkj.econtrol.widget.NestedExpandaleListView
+                android:id="@+id/expandableListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:childDivider="@null"
+                android:clickable="false"
+                android:divider="@null"
+                android:groupIndicator="@null"
+                ></com.mxkj.econtrol.widget.NestedExpandaleListView>
+
+
+            <TextView
+                android:id="@+id/btn_delete"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:background="@drawable/login_regist_bg_white"
+                android:text="删除定时"
+                android:gravity="center"
+                android:textColor="@color/text_orangereg02"
+                android:textSize="30px"
+                android:layout_marginTop="136px"
+                android:layout_marginBottom="40px"
+                android:layout_marginRight="108px"
+                android:layout_marginLeft="108px"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

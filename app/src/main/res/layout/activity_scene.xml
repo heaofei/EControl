@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/incloud_title_layout4"
+            ></include>
+
+        <com.androidkun.xtablayout.XTabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:xTabMode="scrollable"
+            app:xTabIndicatorHeight="2dp"
+            app:xTabIndicatorWidth="40dp"
+            app:xTabIndicatorColor="@color/text_orangereg02"
+            app:xTabSelectedTextColor="@color/text_orangereg02"
+            app:xTabTextColor="@color/text_black_999"
+            app:xTabTextSize="15sp"
+            app:xTabDisplayNum="3"
+            app:xTabSelectedTextSize="16sp"
+            android:visibility="visible"
+            />
+        <View
+            style="@style/view_line"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_smart_part"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+</com.zhy.autolayout.AutoFrameLayout>

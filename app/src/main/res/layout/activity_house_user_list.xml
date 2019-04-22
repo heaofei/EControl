@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_background_grey"
+    android:orientation="vertical"
+    tools:context="com.mxkj.econtrol.view.activity.HouseUserListActivity">
+
+    <include layout="@layout/incloud_title_layout2"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_user_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/com_white"
+        android:padding="24px"
+        />
+    <View style="@style/view_line"
+        ></View>
+
+    <View style="@style/view_line20"
+        android:background="@color/view_background_grey"
+        ></View>
+
+    <RelativeLayout
+        android:id="@+id/rl_qrcode"
+        style="@style/FragmentMy_RelativeLayout_Prass">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/hours_userlist_qrcode"
+            android:textColor="@color/text_black_666"
+            android:textSize="32px" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24px"
+            android:layout_toLeftOf="@+id/iv_next"
+            android:src="@drawable/family_qrcode" />
+
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/center_enter" />
+
+    </RelativeLayout>
+
+        <View
+            android:id="@+id/view_line"
+            android:visibility="invisible"
+            style="@style/view_line"></View>
+
+
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+    <RelativeLayout
+        android:id="@+id/rl_transfer"
+        style="@style/FragmentMy_RelativeLayout_Prass"
+        android:visibility="visible"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/hours_userlist_transfer"
+            android:textColor="@color/text_black_666"
+            android:textSize="32px" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/center_enter" />
+    </RelativeLayout>
+    <View style="@style/view_line"></View>
+
+         <RelativeLayout
+        android:id="@+id/rl_bind_user"
+        style="@style/FragmentMy_RelativeLayout_Prass"
+        android:visibility="visible"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="申请列表"
+            android:textColor="@color/text_black_666"
+            android:textSize="32px" />
+
+             <TextView
+                 android:id="@+id/tv_count"
+                 android:layout_width="40px"
+                 android:layout_height="40px"
+                 android:layout_centerVertical="true"
+                 android:drawablePadding="24px"
+                 android:layout_toLeftOf="@+id/iv"
+                 android:layout_marginRight="26px"
+                 android:textColor="@color/com_white"
+                 android:background="@drawable/bg_shape_reg_count"
+                 android:gravity="center"
+                 android:textSize="26px"
+                 android:visibility="invisible"
+                 />
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/center_enter" />
+    </RelativeLayout>
+    <View style="@style/view_line"></View>
+
+
+
+    </LinearLayout>
+
+    <View style="@style/view_line20"
+        android:background="@color/view_background_grey"
+        ></View>
+
+    <RelativeLayout
+        android:id="@+id/rl_exit"
+        style="@style/FragmentMy_RelativeLayout"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/hours_userlist_exit"
+            android:textColor="@color/text_reg"
+            android:textSize="32px" />
+
+    </RelativeLayout>
+    <View style="@style/view_line"
+        android:layout_marginBottom="20px"
+        ></View>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_house_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/view_background_grey"
+    android:focusableInTouchMode="true"
+    tools:context="com.mxkj.econtrol.view.activity.MyHouseListActivity">
+
+    <include
+        layout="@layout/incloud_title_layout2"
+        ></include>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="true"
+        android:fillViewport="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:background="@color/com_white"
+                android:paddingLeft="36px"
+                >
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="场景名称"
+                    android:textColor="@color/text_black_666"
+                    android:textSize="32px" />
+                <EditText
+                    android:id="@+id/ed_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="场景模式名称"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/text_black_333"
+                    android:textColorHint="@color/text_black_999"
+                    android:layout_toRightOf="@+id/tv_name"
+                    android:background="@null"
+                    android:textSize="28px"
+                    android:paddingLeft="24px"
+                    android:paddingRight="24px"
+                    android:maxLength="4"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <com.mxkj.econtrol.widget.NestedExpandaleListView
+                    android:id="@+id/expandableListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:childDivider="@null"
+                    android:clickable="false"
+                    android:divider="@null"
+                    android:groupIndicator="@null"
+                    ></com.mxkj.econtrol.widget.NestedExpandaleListView>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

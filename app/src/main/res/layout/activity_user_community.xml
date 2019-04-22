@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_white"
+    android:orientation="vertical"
+    tools:context="com.mxkj.econtrol.view.activity.UserCommunityActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@color/app_backgroud">
+
+        <ImageView
+            android:id="@+id/imv_back"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:src="@drawable/ic_back"
+            app:layout_auto_baseheight="width" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="个人主页"
+            android:textColor="@color/com_white"
+            android:textSize="36px" />
+    </RelativeLayout>
+
+
+    <me.hwang.widgets.SmartPullableLayout
+        android:id="@+id/smpl_community"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/com_white">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_user_community"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           />
+    </me.hwang.widgets.SmartPullableLayout>
+
+</LinearLayout>

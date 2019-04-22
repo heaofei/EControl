@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_radius_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16px"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_Mon"
+            style="@style/FragmentMy_RelativeLayout_Prass">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="每周一"
+                android:textColor="@color/text_black_666"
+                android:textSize="32px" />
+
+            <ImageView
+                android:id="@+id/iv_Mon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/home_edit_choose_default32" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/view_line"
+            android:layout_marginLeft="36px"></View>
+
+        <RelativeLayout
+            android:id="@+id/rl_Tue"
+            style="@style/FragmentMy_RelativeLayout_Prass">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="每周二"
+                android:textColor="@color/text_black_666"
+                android:textSize="32px" />
+
+            <ImageView
+                android:id="@+id/iv_Tue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/home_edit_choose_default32" />
+        </RelativeLayout>
+
+        <View
+            style="@style/view_line"
+            android:layout_marginLeft="36px"></View>
+
+        <RelativeLayout
+            android:id="@+id/rl_Wed"
+            style="@style/FragmentMy_RelativeLayout_Prass">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="每周三"
+                android:textColor="@color/text_black_666"
+                android:textSize="32px" />
+
+            <ImageView
+                android:id="@+id/iv_Wed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/home_edit_choose_default32" />
+        </RelativeLayout>
+
+        <View
+            style="@style/view_line"
+            android:layout_marginLeft="36px"></View>
+
+        <RelativeLayout
+            android:id="@+id/rl_Thu"
+            style="@style/FragmentMy_RelativeLayout_Prass">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="每周四"
+                android:textColor="@color/text_black_666"
+                android:textSize="32px" />
+
+            <ImageView
+                android:id="@+id/iv_Thu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/home_edit_choose_default32" />
+        </RelativeLayout>
+
+        <View
+            style="@style/view_line"
+            android:layout_marginLeft="36px"></View>
+
+        <RelativeLayout
+            android:id="@+id/rl_Fri"
+            style="@style/FragmentMy_RelativeLayout_Prass">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="每周五"
+                android:textColor="@color/text_black_666"
+                android:textSize="32px" />
+
+            <ImageView
+                android:id="@+id/iv_Fri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/home_edit_choose_default32" />
+        </RelativeLayout>
+
+        <View
+            style="@style/view_line"
+            android:layout_marginLeft="36px"></View>
+
+        <RelativeLayout
+            android:id="@+id/rl_Sat"
+            style="@style/FragmentMy_RelativeLayout_Prass">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="每周六"
+                android:textColor="@color/text_black_666"
+                android:textSize="32px" />
+
+            <ImageView
+                android:id="@+id/iv_Sat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/home_edit_choose_default32" />
+        </RelativeLayout>
+
+        <View
+            style="@style/view_line"
+            android:layout_marginLeft="36px"></View>
+
+        <RelativeLayout
+            android:id="@+id/rl_Sun"
+            style="@style/FragmentMy_RelativeLayout_Prass">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="每周日"
+                android:textColor="@color/text_black_666"
+                android:textSize="32px" />
+
+            <ImageView
+                android:id="@+id/iv_Sun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/home_edit_choose_default32" />
+        </RelativeLayout>
+
+        <View style="@style/view_line"></View>
+
+
+        <Button
+            android:id="@+id/tv_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:text="确定"
+            android:textColor="@color/com_red"
+            android:textSize="30px" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

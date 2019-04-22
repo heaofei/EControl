@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_background_grey">
+
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/incloud_title_layout2"
+        ></include>
+
+    <ImageView
+        android:id="@+id/imv_app_icon"
+        android:layout_width="220px"
+        android:layout_height="220px"
+        android:layout_marginTop="100px"
+        android:src="@drawable/ic_logo02"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imv_app_icon"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="28px"
+        />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tv_version"
+    android:orientation="vertical"
+    android:layout_marginTop="68px"
+    android:background="@color/com_white"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_about"
+        style="@style/FragmentMy_RelativeLayout_Prass">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_version_about"
+            android:textColor="@color/text_black_666"
+            android:textSize="32px"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/center_enter"
+            android:drawablePadding="24px"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <View
+        style="@style/view_line"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        ></View>
+
+    <RelativeLayout
+        android:id="@+id/rl_service"
+        style="@style/FragmentMy_RelativeLayout_Prass">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_version_setvice"
+            android:textColor="@color/text_black_666"
+            android:textSize="32px"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/center_enter"
+            android:drawablePadding="24px"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <View
+        style="@style/view_line"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        ></View>
+
+    <RelativeLayout
+        android:id="@+id/rl_policy"
+        style="@style/FragmentMy_RelativeLayout_Prass">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_version_policy"
+            android:textColor="@color/text_black_666"
+            android:textSize="32px"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/center_enter"
+            android:drawablePadding="24px"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <View
+        style="@style/view_line"
+        ></View>
+
+</LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/tv_policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_version"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50px"
+        android:text="《方胜服务协议》和《方胜隐私政策》"
+        android:textSize="26px"
+        android:visibility="gone" />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_regist_company"
+        android:layout_centerHorizontal="true"
+        android:textSize="20px"
+        android:textColor="@color/text_black_999"
+        android:layout_marginBottom="8px"
+        android:layout_above="@+id/tv_copyringht"
+        />
+    <TextView
+        android:id="@+id/tv_copyringht"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/login_regist_company02"
+        android:layout_centerHorizontal="true"
+        android:textSize="20px"
+        android:textColor="@color/text_black_999"
+        android:layout_marginBottom="16px"
+        />
+
+
+
+</RelativeLayout>

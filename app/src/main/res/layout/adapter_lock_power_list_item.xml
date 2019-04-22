@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="128px"
+    android:layout_marginBottom="1px"
+    android:background="@color/com_white"
+    android:orientation="vertical"
+    android:paddingLeft="32px"
+    android:paddingRight="32px">
+
+
+
+    <com.mxkj.econtrol.widget.CircleImageView
+        android:id="@+id/imv_header_pic"
+        android:layout_width="88px"
+        android:layout_height="88px"
+        android:src="@drawable/ic_no_head"
+        app:border_color="#80e5e5e5"
+        app:border_overlay="true"
+        app:border_width="2px"
+        app:layout_auto_baseheight="width"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20px"
+        android:layout_marginLeft="20px"
+        android:drawablePadding="10px"
+        android:padding="24px"
+        android:text=""
+        android:textColor="@color/text_black_333"
+        android:textSize="32px"
+        android:layout_toLeftOf="@+id/tv_add"
+        android:layout_toRightOf="@+id/imv_header_pic"
+        />
+
+
+    <View
+        style="@style/view_line"
+        android:layout_alignParentBottom="true"
+        ></View>
+
+    <ImageView
+        android:id="@+id/iv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16px"
+        android:paddingLeft="24px"
+        android:paddingRight="24px"
+        android:paddingTop="16px"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_lock_power_unselected"
+        />
+
+
+
+</RelativeLayout>

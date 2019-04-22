@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mxkj.econtrol.ui.activity.AboutActivity">
+
+    <include layout="@layout/incloud_title_layout2"></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="120px"
+        android:lineSpacingExtra="3dp"
+        android:text="以下临时开锁密码"
+        android:textColor="@color/text_black_333"
+        android:textSize="32px" />
+
+
+    <TextView
+        android:id="@+id/tv_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="24px"
+        android:layout_marginTop="24px"
+        android:lineSpacingExtra="3dp"
+        android:text=""
+        android:textColor="@color/text_black_999"
+        android:textSize="26px" />
+
+
+    <TextView
+        android:id="@+id/tv_temporary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="24px"
+        android:layout_marginTop="128px"
+        android:lineSpacingExtra="3dp"
+        android:text=""
+        android:textColor="@color/text_black_333"
+        android:textSize="80px"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

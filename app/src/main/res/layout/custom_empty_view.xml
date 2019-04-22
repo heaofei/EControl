@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_white">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="88px"
+        android:src="@drawable/ic_no_house" />
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:maxLines="3"
+        android:gravity="center"
+        android:text="您尚未添加住宅"
+        android:textColor="@color/text_black_999"
+        android:textSize="28px"
+        android:layout_marginTop="48px"
+        />
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_marginRight="106px"
+        android:layout_marginLeft="106px"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/login_regist_bg"
+        android:text="新增住宅"
+        android:textSize="30px"
+        android:textColor="@color/com_white"
+        android:layout_marginBottom="80px"
+        />
+</RelativeLayout>

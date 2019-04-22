@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_left"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:background="@drawable/ic_home_menu_bg"
+    android:orientation="vertical"
+    android:layout_marginRight="80dp"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_house_name"
+            android:layout_width="match_parent"
+            android:layout_height="180px"
+            android:gravity="center_vertical"
+            android:paddingRight="20px"
+            android:paddingTop="16dp"
+            android:paddingLeft="38px"
+            android:text=""
+            android:textColor="@color/com_white"
+            android:textSize="32px" />
+
+        <View
+            style="@style/view_line"
+            android:background="@color/com_white"></View>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleview_room"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12px"
+            android:overScrollMode="never" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_menu_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="72px"
+        android:layout_marginRight="64px"
+        android:drawableLeft="@drawable/ic_home_meun_setting"
+        android:drawablePadding="16px"
+        android:gravity="center_vertical"
+        android:text="编辑房间"
+        android:textColor="@color/com_white"
+        android:textSize="28px"></TextView>
+
+    <TextView
+        android:id="@+id/tv_menu_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="72px"
+        android:layout_marginRight="64px"
+        android:background="@drawable/login_regist_bg"
+        android:paddingBottom="12px"
+        android:paddingLeft="32px"
+        android:paddingRight="32px"
+        android:paddingTop="12px"
+        android:text="完成"
+        android:textColor="@color/com_white"
+        android:textSize="28px"
+        android:visibility="gone"></TextView>
+
+</RelativeLayout>

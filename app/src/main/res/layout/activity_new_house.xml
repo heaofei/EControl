@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_background_grey"
+    android:focusableInTouchMode="true"
+    tools:context=".view.activity.NewHouseActivity">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/incloud_title_layout2"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:background="@color/view_background_grey"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_select_house_estate"
+                    style="@style/FragmentMy_RelativeLayout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/new_hours_estate"
+                        android:textColor="@color/text_black_666"
+                        android:textSize="32px" />
+
+                    <TextView
+                        android:id="@+id/tv_select_house_estate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="24px"
+                        android:drawableRight="@drawable/center_enter"
+                        android:text="请选择地区"
+                        android:textColor="@color/text_black_c3c3c3"
+                        android:textSize="28px" />
+
+                </RelativeLayout>
+
+                <View style="@style/view_line"></View>
+
+                <RelativeLayout
+                    android:id="@+id/rl_select_house"
+                    style="@style/FragmentMy_RelativeLayout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="房号"
+                        android:textColor="@color/text_black_666"
+                        android:textSize="32px" />
+
+                    <TextView
+                        android:id="@+id/tv_select_house"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="24px"
+                        android:drawableRight="@drawable/center_enter"
+                        android:text="请选择房号"
+                        android:textColor="@color/text_black_c3c3c3"
+                        android:textSize="28px"
+                        android:textColorHint="@color/text_black_c3c3c3"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_name"
+                    style="@style/FragmentMy_RelativeLayout"
+                    android:layout_marginTop="20px">
+
+                    <TextView
+                        android:id="@+id/tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/new_hours_yourname"
+                        android:textColor="@color/text_black_666"
+                        android:textSize="32px" />
+
+                    <EditText
+                        android:id="@+id/ed_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv"
+                        android:background="@null"
+                        android:gravity="center|right"
+                        android:hint="@string/new_hours_you_name"
+                        android:maxLength="12"
+                        android:paddingLeft="10px"
+                        android:paddingRight="24px"
+                        android:textColor="@color/text_black_999"
+                        android:textColorHint="@color/text_black_c3c3c3"
+                        android:textSize="28px" />
+                </RelativeLayout>
+
+                <View style="@style/view_line"></View>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_is_owner"
+                    style="@style/FragmentMy_RelativeLayout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/new_hours_is_owner"
+                        android:textColor="@color/text_black_666"
+                        android:textSize="32px" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="24px"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_is_owner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:padding="20px"
+                            android:src="@drawable/center_userinfo_choose_default" />
+
+                        <TextView
+                            android:id="@+id/tv_is_owner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:text="户主"
+                            android:textColor="@color/text_black_999"
+                            android:textSize="30px" />
+
+                        <ImageView
+                            android:id="@+id/iv_not_owner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="62px"
+                            android:padding="20px"
+                            android:src="@drawable/center_userinfo_choose_selected" />
+
+                        <TextView
+                            android:id="@+id/tv_not_owner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:text="家庭用户"
+                            android:textColor="@color/text_black_666"
+                            android:textSize="30px" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View style="@style/view_line"></View>
+
+                <LinearLayout
+                    android:id="@+id/ll_is_owner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="invisible"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="12px"
+                        android:layout_marginLeft="36px"
+                        android:layout_marginTop="28px"
+                        android:text="@string/new_hours_verification"
+                        android:textColor="@color/text_black_999"
+                        android:textSize="24px" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_certificates"
+                        style="@style/FragmentMy_RelativeLayout">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/new_hours_certificates"
+                            android:textColor="@color/text_black_666"
+                            android:textSize="32px" />
+
+                        <TextView
+                            android:id="@+id/tv_select_certificates"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:drawablePadding="24px"
+                            android:drawableRight="@drawable/center_enter"
+                            android:text="@string/new_hours_not_add"
+                            android:textColor="@color/text_black_c3c3c3"
+                            android:textSize="28px" />
+
+                    </RelativeLayout>
+
+                    <View style="@style/view_line"></View>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_property"
+                        style="@style/FragmentMy_RelativeLayout">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/new_hours_property"
+                            android:textColor="@color/text_black_666"
+                            android:textSize="32px" />
+
+                        <TextView
+                            android:id="@+id/tv_select_property"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:drawablePadding="24px"
+                            android:drawableRight="@drawable/center_enter"
+                            android:textColor="@color/text_black_c3c3c3"
+                            android:textSize="28px"
+                            android:text="@string/new_hours_not_add"/>
+
+                    </RelativeLayout>
+
+                    <View style="@style/view_line"></View>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bv_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="86px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="104px"
+                    android:layout_marginRight="104px"
+                    android:layout_marginTop="180px"
+                    android:background="@drawable/login_regist_bg_50opaque"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:text="@string/new_hours_submit"
+                    android:textColor="@color/com_white"
+                    android:textSize="32px"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10px"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

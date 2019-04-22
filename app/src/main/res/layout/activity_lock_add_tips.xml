@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/com_white"
+    tools:context="com.mxkj.econtrol.ui.activity.AboutActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/iv_gifView"
+            android:layout_width="500px"
+            android:layout_height="746px"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:src="@drawable/ic_setting_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60px"
+            />
+
+        <ImageView
+            android:id="@+id/iv_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:visibility="visible"
+            android:src="@drawable/ic_bound_doorlock1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60px"
+            />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_marginRight="106px"
+        android:layout_marginLeft="106px"
+        android:background="@drawable/login_regist_bg"
+        android:text="下一步"
+        android:textSize="30px"
+        android:textColor="@color/com_white"
+        android:layout_gravity="bottom"
+        android:layout_above="@+id/tv_tips_setting"
+        android:layout_marginBottom="36dp"
+        />
+
+        <TextView
+            android:id="@+id/tv_tips_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="46dp"
+            android:text="我已设置，跳过此步"
+            android:textColor="@color/text_orangereg02"
+            android:textSize="28px"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/incloud_title_layout6"
+        ></include>
+
+
+</RelativeLayout>

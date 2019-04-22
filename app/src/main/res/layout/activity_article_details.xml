@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_white"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.mxkj.econtrol.view.activity.ArticleDetailsActivity">
+
+    <include layout="@layout/incloud_title_layout7"></include>
+
+            <include layout="@layout/item_video_list"></include>
+
+            <com.mxkj.econtrol.widget.MyScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <include
+                        layout="@layout/header_news_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                    <!--<com.chaychan.uikit.powerfulrecyclerview.PowerfulRecyclerView
+                        android:id="@+id/rv_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:dividerColor="@color/white"
+                        />-->
+                    <LinearLayout
+                        android:id="@+id/ll_comment_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="16px"
+                        android:orientation="vertical">
+
+                        <View
+                            style="@style/view_line"
+                            android:layout_marginTop="16px"></View>
+
+                        <TextView
+                            android:id="@+id/tv_comment_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16px"
+                            android:layout_marginLeft="40px"
+                            android:layout_marginTop="16px"
+                            android:layout_toRightOf="@+id/imv_header_pic"
+                            android:text="评论 "
+                            android:textColor="@color/text_black_666"
+                            android:textSize="30px" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recyclerview_comment"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+                            <com.mxkj.econtrol.widget.MyLinearLayout
+                                android:id="@+id/ll_status"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingBottom="200px"
+                                android:paddingTop="200px"
+                                android:visibility="gone"></com.mxkj.econtrol.widget.MyLinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.mxkj.econtrol.widget.MyScrollView>
+
+
+
+
+    <include
+        layout="@layout/include_news_detail_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+</LinearLayout>

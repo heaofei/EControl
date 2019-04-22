@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mxkj.econtrol.widget.SuperSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/swipe_refresh"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:id="@+id/rl_item"
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:background="@null"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ll_total_number"
+                android:layout_marginLeft="48px"
+                android:layout_marginRight="48px"
+                android:layout_marginTop="24px"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="灯泡使用总时长"
+                    android:textColor="@color/text_black_c3c3c3"
+                    android:textSize="26px" />
+
+                <ImageView
+                    android:id="@+id/iv_day_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_open_day"
+                    android:paddingBottom="20px"
+                    android:paddingLeft="20px"
+                    android:paddingTop="20px"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_total_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="46px"
+                android:layout_marginLeft="48px"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:id="@+id/tv_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="0"
+                    android:textColor="@color/text_black_666"
+                    android:textSize="50dp" />
+
+                <TextView
+                    android:id="@+id/tv_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24px"
+                    android:text="分钟"
+                    android:textColor="@color/text_black_666"
+                    android:textSize="26px"
+                    android:layout_marginTop="28px"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_add_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60px"
+                    android:text="0"
+                    android:textColor="@color/text_black_666"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/layout_radius_white180"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/ic_hints_decline"
+                    android:drawablePadding="10px"
+                    android:paddingLeft="40px"
+                    android:paddingRight="40px"
+                    android:paddingBottom="8px"
+                    android:paddingTop="8px"
+                    android:visibility="invisible"
+                    />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@color/com_white"
+            android:paddingLeft="48px"
+            android:paddingRight="48px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="使用时长前十名"
+                android:textColor="@color/text_black_666"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/ic_fragment_date"
+                android:drawablePadding="14px"
+                android:text="9月10日"
+                android:textColor="@color/text_black_999"
+                android:textSize="28px"
+                android:paddingLeft="30px"
+                android:paddingBottom="6px"
+                android:paddingTop="6px"
+                android:textStyle="bold"
+                />
+
+        </RelativeLayout>
+
+        <View style="@style/view_line"></View>
+
+        <com.mxkj.econtrol.widget.LinearListView
+            android:id="@+id/linearListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:background="@color/com_white"
+            ></com.mxkj.econtrol.widget.LinearListView>
+
+    </LinearLayout>
+</ScrollView>
+
+</com.mxkj.econtrol.widget.SuperSwipeRefreshLayout>

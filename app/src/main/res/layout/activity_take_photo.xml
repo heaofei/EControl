@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/view_background_grey"
+    >
+
+    <include
+        layout="@layout/incloud_title_layout2"
+        ></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/ll_propertyFront"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="36px"
+                    android:layout_marginTop="48px"
+                    android:text="请拍摄相关的物业材料"
+                    android:textColor="@color/text_black_666"
+                    android:textSize="30px" />
+                <RelativeLayout
+                    android:layout_width="680px"
+                    android:layout_height="428px"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/ic_shenfenzheng_bg">
+                    <ImageView
+                        android:id="@+id/iv_propertyFront_bg"
+                        android:layout_width="650px"
+                        android:layout_height="400px"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY"
+                        android:layout_margin="4px"
+                         />
+
+                    <ImageView
+                        android:id="@+id/iv_propertyFront"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="4px"
+                        android:src="@drawable/ic_cam"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20px"
+                        android:text="请拍摄"
+                        android:textColor="@color/text_black_333"
+                        android:textSize="38px"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/iv_propertyFront"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_idCardFront"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+            <TextView
+                android:id="@+id/tv_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="36px"
+                android:layout_marginTop="48px"
+                android:text="请拍摄实体身份证"
+                android:textColor="@color/text_black_666"
+                android:textSize="30px" />
+            <RelativeLayout
+                android:layout_width="680px"
+                android:layout_height="428px"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/ic_shenfenzheng_bg">
+                <ImageView
+                    android:id="@+id/iv_carema_just"
+                    android:layout_width="650px"
+                    android:layout_height="400px"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY"
+                    android:layout_margin="4px"
+                    android:src="@drawable/ic_shenfenzheng01" />
+                <ImageView
+                    android:id="@+id/iv_just"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="4px"
+                    android:src="@drawable/ic_cam" />
+                <TextView
+                    android:id="@+id/tv_tjust"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20px"
+                    android:text="拍摄身份证正面"
+                    android:textColor="@color/text_black_333"
+                    android:textSize="38px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/iv_just"
+                    />
+            </RelativeLayout>
+            </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_idCardBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rl_item"
+                android:layout_width="680px"
+                android:layout_height="428px"
+                android:layout_marginTop="64px"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/ic_shenfenzheng_bg">
+                <ImageView
+                    android:id="@+id/iv_carema_reverse"
+                    android:layout_width="650px"
+                    android:layout_height="400px"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY"
+                    android:layout_margin="4px"
+                    android:src="@drawable/ic_shenfenzheng02" />
+                <ImageView
+                    android:id="@+id/iv_reverse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="4px"
+                    android:src="@drawable/ic_cam"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20px"
+                    android:text="拍摄身份证背面"
+                    android:textColor="@color/text_black_333"
+                    android:textSize="38px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/iv_reverse"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_property"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="110px"
+                android:visibility="invisible"
+                >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您可参考范例上传您的材料，请"
+                android:textColor="@color/text_black_666"
+                android:textSize="26px"
+                />
+                <TextView
+                android:id="@+id/tv_property"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击这里"
+                android:textColor="@color/text_orangereg02"
+                android:textSize="26px"
+                />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="36px"
+                android:layout_marginTop="14px"
+                android:text="我们会保护您的信息安全"
+                android:textColor="@color/text_black_999"
+                android:textSize="24px" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:circle_seekbar="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/view_background_grey"
+    tools:context="com.mxkj.econtrol.view.activity.HousePartInfoActivity">
+
+
+    <include
+        layout="@layout/incloud_title_layout2"
+        ></include>
+
+    <View
+        style="@style/view_line"
+        ></View>
+
+    <RelativeLayout
+        android:id="@+id/rl_message"
+        style="@style/FragmentMy_RelativeLayout_Prass">
+
+        <ImageView
+            android:id="@+id/tv01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_notice" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22px"
+            android:layout_toRightOf="@+id/tv01"
+            android:text="@string/message_center_message"
+            android:textColor="@color/text_black_666"
+            android:textSize="32px" />
+
+        <ImageView
+            android:id="@+id/iv_message_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22px"
+            android:layout_marginRight="16px"
+            android:layout_toLeftOf="@+id/iv01"
+            android:src="@drawable/ic_icon_message_new"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22px"
+            android:src="@drawable/center_enter" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_notice"
+        style="@style/FragmentMy_RelativeLayout_Prass"
+        >
+        <ImageView
+            android:id="@+id/tv02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_message"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22px"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv02"
+            android:textSize="32px"
+            android:textColor="@color/text_black_666"
+            android:text="@string/message_center_notice"
+            />
+        <ImageView
+            android:id="@+id/iv_notice_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16px"
+            android:src="@drawable/ic_icon_message_new"
+            android:layout_toLeftOf="@+id/iv02"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/iv02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22px"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/center_enter"
+            />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

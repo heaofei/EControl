@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mxkj.econtrol">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+
+    <application
+        android:name=".app.APP"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="Android:icon, android:theme">
+        <activity
+            android:name=".view.activity.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".view.activity.RegistActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name=".view.activity.FirstPageActivity" />
+        <activity android:name=".view.activity.UserInfoModifyActivity" />
+        <activity android:name=".view.activity.UserPassWordResetActivity" />
+        <activity
+            android:name=".ui.activity.SelectPictureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert" />
+        <activity android:name=".view.activity.NewHouseActivity" />
+        <activity android:name=".view.activity.UserInfoActivity" />
+        <activity android:name=".view.activity.HouseMainActivity" />
+        <activity android:name=".view.activity.SceneNewActivity" />
+        <activity android:name=".ui.activity.WebViewActivity" />
+        <activity android:name=".ui.activity.SettingActivity" />
+        <activity android:name=".ui.activity.FeedBackActivity" />
+        <activity
+            android:name=".view.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name=".ui.activity.HouseControlLogActivity" />
+        <activity android:name=".ui.activity.SendCommunityActivity" />
+
+        <service
+            android:name=".service.HeartBeatServicie"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".view.activity.HousePartInfoActivity" />
+        <activity android:name=".view.activity.HouseUserListActivity" />
+
+        <meta-data
+            android:name="design_width"
+            android:value="750" />
+        <meta-data
+            android:name="design_height"
+            android:value="1334" />
+
+        <activity android:name=".view.activity.PublicCommunityActivity" />
+        <activity android:name=".view.activity.PublicCommunityDetailActivity" />
+        <activity android:name=".ui.activity.CommentActivity" />
+        <activity android:name=".ui.activity.BrowsePicActivity" />
+        <activity android:name=".view.activity.StoreActivity" />
+        <activity android:name=".ui.activity.ProductDetailActivity" />
+        <activity android:name=".ui.activity.AboutActivity" />
+        <activity android:name=".ui.activity.PrivateAndPolicy" />
+        <activity android:name=".ui.activity.AboutThisVersionActivity" />
+        <activity android:name=".ui.activity.ContractUsActivity" />
+        <activity android:name=".view.activity.UserCommunityActivity" />
+        <!-- 第二期开始 -->
+        <activity
+            android:name=".view.activity.MainNewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".view.activity.LightSettingActivity" />
+        <activity android:name=".view.activity.LightTimingListActivity" />
+        <activity android:name=".view.activity.LightTimingEditActivity" />
+        <activity android:name=".view.activity.MyHouseListActivity" />
+        <activity android:name=".view.activity.RoomActivity" />
+        <activity android:name=".view.activity.SceneEditActivity" />
+        <activity
+            android:name=".ui.activity.LoginRegistActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ui.activity.QRCodeActivity" />
+        <activity android:name=".view.activity.HouseUserLisOperatetActivity" />
+        <activity android:name=".view.activity.MemberDataActivity" />
+        <activity android:name=".view.activity.MessageCenterActivity" />
+        <activity android:name=".view.activity.MessageListActivity" />
+        <activity android:name=".view.activity.MessageDetailsActivity" />
+        <activity android:name=".ui.activity.TakePhotoActivity" />
+        <activity android:name=".ui.activity.GuideActivity" />
+        <activity
+            android:name=".ui.activity.SecondActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.PlayMusicActivity" />
+
+        <provider
+            android:name=".utils.MyFileProvider"
+            android:authorities="com.mxkj.econtrol.fileprovider.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths"
+                tools:replace="android:resource" />
+        </provider>
+
+        <activity android:name=".view.activity.ApplyBindHouseListActivity" />
+        <activity android:name=".ui.activity.LockAddTipsActivity" />
+        <activity android:name=".ui.activity.LockPasswordManageActivity" />
+        <activity android:name=".ui.activity.LockGesturePasswordActivity" />
+        <activity android:name=".view.activity.SearchLockListActivity" />
+        <activity android:name=".view.activity.LockTemporaryPswActivity" />
+        <activity android:name=".view.activity.LockSubmitVerificationActivity" />
+        <activity android:name=".view.activity.LockPowerListActivity" />
+        <activity android:name=".view.activity.AppTodoListActivity" />
+        <activity android:name=".view.activity.TestTestActivity" />
+        <activity android:name=".view.activity.SearchGatewayActivity" />
+        <activity android:name=".view.activity.EmpowerToiPadActivity" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".view.activity.InformationInfoActivity" />
+        <activity android:name=".view.activity.InformationCommentActivity" />
+        <activity
+            android:name=".view.activity.InformationCollectionActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.ArticleDetailsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".view.activity.CommentDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".view.activity.MyCommentDetailsActivity" />
+        <activity android:name=".view.activity.DeviceTimingActivity" />
+        <activity android:name=".view.activity.DeviceTimingEditActivity" />
+        <activity android:name=".view.activity.EditDeviceListActivity" />
+        <activity android:name=".ui.activity.HistoryActivity" />
+        <activity android:name=".ui.activity.HabitActivity" />
+        <activity android:name=".view.activity.DeviceFragmentActivity" />
+        <activity android:name=".ui.activity.ExperienceActivity" />
+        <activity android:name=".view.activity.SceneDeviceEditActivity" />
+        <activity android:name=".ui.activity.UsageStatisticsActivity"></activity>
+    </application>
+
+</manifest>

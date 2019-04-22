@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_light_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_background_grey"
+    android:orientation="vertical"
+    tools:context="com.mxkj.econtrol.view.activity.LightSettingActivity">
+
+    <include layout="@layout/incloud_title_layout4"></include>
+
+    <com.mxkj.econtrol.widget.MyLinearLayout
+        android:id="@+id/ll_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title">
+    <com.mxkj.econtrol.widget.ItemRemoveRecyclerView
+        android:id="@+id/recycleView_timing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </com.mxkj.econtrol.widget.MyLinearLayout>
+
+</LinearLayout>

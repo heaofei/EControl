@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imv_product_detail_pic"
+        android:layout_width="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/rl_book"
+        android:layout_width="match_parent"
+        android:layout_height="270px"
+        android:layout_alignParentBottom="true"
+        android:background="#30ffffff">
+
+        <TextView
+            android:id="@+id/tv_book"
+            android:layout_width="700px"
+            android:layout_height="86px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16px"
+            android:background="@drawable/save_btn_bg_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="预定"
+            android:textColor="@color/com_white" />
+
+        <TextView
+            android:id="@+id/tv_product_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="25px"
+            android:text="213123123"
+            android:textColor="#222222"
+            android:textSize="28px" />
+    </RelativeLayout>
+</RelativeLayout>

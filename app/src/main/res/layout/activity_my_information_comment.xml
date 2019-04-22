@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_white"
+    android:orientation="vertical"
+    tools:context="com.mxkj.econtrol.view.activity.InformationCommentActivity">
+
+    <include layout="@layout/incloud_title_layout2"></include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+        <RelativeLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_comment_get"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="64px"
+                android:gravity="center|right"
+                android:paddingBottom="12px"
+                android:paddingTop="12px"
+                android:text="收到的评论"
+                android:textColor="@color/text_orangereg02"
+                android:textSize="28px" />
+            <View
+                android:id="@+id/view_line_get"
+                android:layout_width="match_parent"
+                android:layout_height="4px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="144px"
+                android:layout_marginRight="34px"
+                android:background="@color/text_orangereg02"></View>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_comment_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="64px"
+                android:gravity="center_vertical"
+                android:paddingBottom="12px"
+                android:paddingTop="12px"
+                android:text="发出的评论"
+                android:textColor="@color/text_black_666"
+                android:textSize="28px" />
+            <View
+                android:id="@+id/view_line_send"
+                android:layout_width="match_parent"
+                android:layout_height="4px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="34px"
+                android:layout_marginRight="144px"
+                android:background="@color/text_orangereg02"
+                android:visibility="gone"></View>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View style="@style/view_line"></View>
+
+    <com.mxkj.econtrol.widget.SuperSwipeRefreshLayout
+        android:id="@+id/superSwipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </android.support.v7.widget.RecyclerView>
+
+
+    </com.mxkj.econtrol.widget.SuperSwipeRefreshLayout>
+
+
+
+</LinearLayout>

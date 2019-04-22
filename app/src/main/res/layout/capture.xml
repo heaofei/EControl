@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    
+     <include
+        android:id="@+id/title"
+        layout="@layout/incloud_title_layout3" />
+     
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        >
+        
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <com.mxkj.econtrol.utils.qrcode.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Scan Barcode"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_cancel_scan"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="65dp"
+            android:text="找不到二维码？"
+            android:textColor="@color/text_orangereg02"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@null"
+            />
+        
+    </RelativeLayout>
+
+      </FrameLayout>
+      
+</RelativeLayout>

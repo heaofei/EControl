@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_background_grey"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="89px"
+        android:background="@drawable/gradient_background"
+        >
+        <TextView
+            android:id="@+id/tv_title_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/com_white"
+            android:textSize="34px"
+            android:text="个人中心"
+            />
+
+    </RelativeLayout>
+    <com.mxkj.econtrol.widget.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/com_white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_info"
+                style="@style/FragmentMy_RelativeLayout_Prass"
+                android:layout_height="200px">
+
+                <com.mxkj.econtrol.widget.CircleImageView
+                    android:id="@+id/imv_header"
+                    android:layout_width="154px"
+                    android:layout_height="154px"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_no_head"
+                    app:border_color="@color/com_white"
+                    app:border_overlay="true"
+                    app:border_width="1dp"
+                    app:layout_auto_baseheight="width" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@+id/imv_header"
+                    android:layout_marginLeft="36px"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@color/text_black_666"
+                        android:textSize="32px" />
+
+                    <TextView
+                        android:id="@+id/tv_isowen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="8px"
+                        android:text=""
+                        android:textColor="#FFA3A3A3"
+                        android:textSize="28px" />
+
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/center_enter"
+                    android:drawablePadding="24px" />
+            </RelativeLayout>
+
+            <View style="@style/view_line20"></View>
+
+
+
+            <RelativeLayout
+                android:id="@+id/rl_message"
+                style="@style/FragmentMy_RelativeLayout_Prass">
+
+
+                <ImageView
+                    android:id="@+id/iv_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:src="@drawable/ic_my_personal_message"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="消息中心"
+                    android:textColor="@color/text_black_666"
+                    android:textSize="30px"
+                    android:layout_toRightOf="@+id/iv_message"
+                    android:layout_marginLeft="24px"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_count"
+                    android:layout_width="32px"
+                    android:layout_height="32px"
+                    android:textColor="@color/com_white"
+                    android:background="@drawable/bg_shape_reg_count"
+                    android:gravity="center"
+                    android:textSize="8dp"
+                    android:text=""
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    />
+
+
+
+            </RelativeLayout>
+
+            <View style="@style/view_line"></View>
+
+            <RelativeLayout
+                android:id="@+id/rl_history"
+                style="@style/FragmentMy_RelativeLayout_Prass"
+                >
+                <ImageView
+                    android:id="@+id/iv_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:src="@drawable/ic_my_personal_history"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="历史记录"
+                    android:textColor="@color/text_black_666"
+                    android:textSize="30px"
+                    android:layout_toRightOf="@+id/iv_history"
+                    android:layout_marginLeft="24px"
+                    />
+
+            </RelativeLayout>
+
+            <View style="@style/view_line20"></View>
+
+            <RelativeLayout
+                android:id="@+id/rl_myhouse"
+                style="@style/FragmentMy_RelativeLayout_Prass">
+
+                <ImageView
+                    android:id="@+id/iv_myhouse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:src="@drawable/ic_my_personal_house"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_myhouse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="我的住宅"
+                    android:textColor="@color/text_black_666"
+                    android:textSize="30px"
+                    android:layout_toRightOf="@+id/iv_myhouse"
+                    android:layout_marginLeft="24px"
+                    />
+
+            </RelativeLayout>
+
+            <View style="@style/view_line"></View>
+
+            <RelativeLayout
+                android:id="@+id/rl_family_member"
+                style="@style/FragmentMy_RelativeLayout_Prass">
+
+
+                <ImageView
+                    android:id="@+id/iv_family_member"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:src="@drawable/ic_my_personal_member"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_family_member"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="家庭成员"
+                    android:textColor="@color/text_black_666"
+                    android:textSize="30px"
+                    android:layout_toRightOf="@+id/iv_family_member"
+                    android:layout_marginLeft="24px"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_count_apply"
+                    android:layout_width="32px"
+                    android:layout_height="32px"
+                    android:textColor="@color/com_white"
+                    android:background="@drawable/bg_shape_reg_count"
+                    android:gravity="center"
+                    android:textSize="8dp"
+                    android:text=""
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                style="@style/view_line"
+                ></View>
+
+            <RelativeLayout
+                android:id="@+id/rl_scan"
+                style="@style/FragmentMy_RelativeLayout_Prass">
+
+                <ImageView
+                    android:id="@+id/iv_scan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:src="@drawable/ic_my_personal_scan"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_scan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="扫码加入"
+                    android:textColor="@color/text_black_666"
+                    android:textSize="30px"
+                    android:layout_toRightOf="@+id/iv_scan"
+                    android:layout_marginLeft="24px"
+                    />
+
+
+            </RelativeLayout>
+
+            <View style="@style/view_line20"></View>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_feedback"
+                style="@style/FragmentMy_RelativeLayout_Prass">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/ic_my_personal_feedback"
+                    android:drawablePadding="24px"
+                    android:gravity="center"
+                    android:text="意见反馈"
+                    android:textColor="@color/text_black_666"
+                    android:textSize="30px" />
+
+
+            </RelativeLayout>
+
+            <View
+                style="@style/view_line"
+                ></View>
+
+            <RelativeLayout
+                android:id="@+id/rl_about"
+                style="@style/FragmentMy_RelativeLayout_Prass">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/ic_my_personal_about"
+                    android:drawablePadding="24px"
+                    android:gravity="center"
+                    android:text="关于我们"
+                    android:textColor="@color/text_black_666"
+                    android:textSize="30px" />
+
+
+            </RelativeLayout>
+
+            <View
+                style="@style/view_line"
+                ></View>
+
+            <RelativeLayout
+                android:id="@+id/rl_setting"
+                style="@style/FragmentMy_RelativeLayout_Prass">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/ic_my_personal_setting"
+                    android:drawablePadding="24px"
+                    android:gravity="center"
+                    android:text="设置"
+                    android:textColor="@color/text_black_666"
+                    android:textSize="30px" />
+
+
+            </RelativeLayout>
+
+            <View style="@style/view_line"
+                ></View>
+            <TextView
+                android:id="@+id/tv_exit_experience"
+                android:layout_width="match_parent"
+                android:layout_height="70px"
+                android:textColor="@color/com_white"
+                android:textSize="30px"
+                android:text="退出体验"
+                android:background="@drawable/login_regist_bg"
+                android:gravity="center"
+                android:layout_marginRight="220px"
+                android:layout_marginLeft="220px"
+                android:layout_marginTop="60px"
+                android:layout_marginBottom="60px"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+    </com.mxkj.econtrol.widget.MyScrollView>
+</LinearLayout>

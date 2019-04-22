@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_layout"
+    tools:context="com.mxkj.econtrol.ui.activity.SelectPictureActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20px"
+        android:background="@drawable/layout_radius_white10"
+        >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/please_select_pic"
+        android:textColor="@color/com_black" />
+
+    <Button
+        android:id="@+id/btnPickBySelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/com_white"
+        android:onClick="onClick"
+        android:text="相册"
+        android:textColor="@color/com_black" />
+
+    <Button
+        android:id="@+id/btnPickByTake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:background="@color/com_white"
+        android:onClick="onClick"
+        android:text="拍照"
+        android:textColor="@color/com_black" />
+
+    <Button
+        android:layout_marginTop="1px"
+        android:id="@+id/btn_restore_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/com_white"
+        android:text="恢复默认照片"
+        android:textColor="@color/com_black"
+        android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

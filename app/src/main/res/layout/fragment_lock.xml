@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/com_white"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/rl_battery_alerts"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+            android:background="@color/com_background"
+        android:paddingRight="32px"
+        android:paddingLeft="32px"
+        android:visibility="gone"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="门锁电池电量低于25%，请及时更换电池。"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_know"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我知道了"
+            android:textColor="@color/com_blue"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/iv_lock_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_lock_empty"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="96px"
+        />
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/iv_lock_bg"
+        android:layout_marginTop="48px"
+        android:textSize="28px"
+        android:textColor="@color/text_black_999"
+        android:paddingRight="48px"
+        android:paddingLeft="48px"
+        android:gravity="center"
+        />
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_marginRight="106px"
+        android:layout_marginLeft="106px"
+        android:background="@drawable/login_regist_bg"
+        android:text="添加门锁"
+        android:textSize="30px"
+        android:textColor="@color/com_white"
+        android:layout_marginBottom="80px"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        android:layout_above="@+id/ll_bottom_psw"
+        />
+
+    <Button
+        android:id="@+id/btn_open"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_marginRight="106px"
+        android:layout_marginLeft="106px"
+        android:background="@drawable/login_regist_bg"
+        android:text="立即开锁"
+        android:textSize="30px"
+        android:textColor="@color/com_white"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        android:layout_above="@+id/ll_bottom_psw"
+        android:layout_marginBottom="30px"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_psw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        >
+
+    <ImageView
+        android:id="@+id/viewline"
+        android:layout_width="match_parent"
+        android:layout_height="56px"
+        android:src="@drawable/ic_lock_bg_line"
+        android:layout_above="@+id/ll_bottom_psw"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_password"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/tv_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密码管理"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/ic_psw_manager"
+                android:drawablePadding="24px"
+                android:textSize="26px"
+                android:textColor="@color/text_black_666"
+                />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_temporary"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/tv_temporary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="临时开锁"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/ic_psw_remporary"
+                android:drawablePadding="24px"
+                android:textSize="26px"
+                android:textColor="@color/text_black_666"
+                />
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_background_grey"
+    android:orientation="vertical"
+    tools:context="com.mxkj.econtrol.view.activity.HouseUserListActivity"
+    android:focusableInTouchMode="true"
+    >
+
+
+    <include layout="@layout/incloud_title_layout2"></include>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_user_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/com_white"
+                android:padding="24px"
+                />
+    </RelativeLayout>
+
+</LinearLayout>

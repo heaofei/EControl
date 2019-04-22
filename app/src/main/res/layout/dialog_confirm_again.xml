@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    android:background="@drawable/layout_radius_white"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48px"
+                android:gravity="center"
+                android:paddingLeft="16px"
+                android:paddingRight="16px"
+                android:text="Title"
+                android:textColor="@color/text_black_333"
+                android:textSize="36px"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16px"
+                android:layout_marginRight="16px"
+                android:layout_marginTop="26px"
+                android:background="@android:color/white"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="content"
+                android:textColor="@color/text_black_666"
+                android:textSize="14dp"
+                android:layout_gravity="center_horizontal"
+                ></TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="48px"
+                android:background="@color/view_light_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/tv_confirm"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/photo_camera_selector"
+                    android:text="确定"
+                    android:textColor="@color/com_blue"
+                    android:textSize="34px"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

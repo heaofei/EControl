@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_camera_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/com_white"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="36px"
+        android:layout_marginRight="36px"
+        android:layout_marginTop="36px">
+
+
+        <TextView
+            android:id="@+id/tv_camera_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32px"
+            android:layout_marginRight="32px"
+            android:layout_marginTop="22px"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@color/text_black_666"
+            android:textSize="32px"
+            android:visibility="visible"
+            />
+
+
+      <ImageView
+          android:id="@+id/iv_bg"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_alignParentBottom="true"
+          android:src="@drawable/ic_no_pic"
+          />
+        <ImageView
+          android:id="@+id/iv_delete"
+          android:layout_width="90px"
+          android:layout_height="90px"
+          android:src="@drawable/umeng_socialize_delete"
+          android:layout_alignParentBottom="true"
+            android:visibility="gone"
+          />
+
+    </RelativeLayout>
+
+
+
+    <View style="@style/view_line"></View>
+
+</LinearLayout>
+

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="140px"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1px"
+    android:orientation="vertical"
+    android:background="@color/com_white">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10px"
+        >
+
+    <com.mxkj.econtrol.widget.CircleImageView
+        android:id="@+id/imv_header_pic"
+        android:layout_width="88px"
+        android:layout_height="88px"
+        android:src="@drawable/family_unsettled"
+        app:layout_auto_baseheight="width"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10px"
+        app:border_color="@color/text_orangereg02"
+        />
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_nick_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="26px"
+        android:textColor="@color/text_black_666"
+        android:layout_below="@+id/rl_header"
+        android:layout_centerHorizontal="true"
+        android:lines="1"
+        android:ellipsize="end"
+        android:layout_marginBottom="10px"
+        android:layout_marginLeft="12px"
+        android:layout_marginRight="12px"
+        />
+
+    <TextView
+        android:id="@+id/tv_fangzhu"
+        android:layout_width="68px"
+        android:layout_height="26px"
+        android:background="@drawable/login_regist_bg"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="房主"
+        android:textSize="8sp"
+        android:textColor="@color/com_white"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/tv_nick_name"
+        android:visibility="gone"
+        />
+</RelativeLayout>

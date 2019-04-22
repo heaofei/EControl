@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f7f7f7"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/incloud_title_layout7"
+        android:visibility="gone"
+        ></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/title"
+        >
+        <com.androidkun.xtablayout.XTabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            app:xTabMode="scrollable"
+            app:xTabIndicatorColor="@color/text_orangereg02"
+            app:xTabIndicatorHeight="2dp"
+            app:xTabIndicatorWidth="18dp"
+            app:xTabSelectedTextColor="@color/text_orangereg02"
+            app:xTabTextColor="@color/text_black_666"
+            app:xTabTextSize="15sp"
+            app:xTabDisplayNum="2"
+            app:xTabSelectedTextSize="16sp"
+            android:visibility="gone"
+            />
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include
+        layout="@layout/incloud_title_layout2"
+        ></include>
+
+    <com.mxkj.econtrol.widget.MyLinearLayout
+        android:id="@+id/ll_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        >
+                <!--app:putdown="false"
+                app:putup="true"-->
+
+        <com.mxkj.econtrol.widget.SuperSwipeRefreshLayout
+        android:id="@+id/superSwipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </android.support.v7.widget.RecyclerView>
+
+
+    </com.mxkj.econtrol.widget.SuperSwipeRefreshLayout>
+
+    </com.mxkj.econtrol.widget.MyLinearLayout>
+</LinearLayout>
